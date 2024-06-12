@@ -1,0 +1,9 @@
+{
+  "name": "tmdp-doc",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "setup": "yarn global add docsify-cli  && docsify init",
+    "start": "docsify serve -p 3001 ."
+  }
+}
