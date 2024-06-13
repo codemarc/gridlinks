@@ -1,8 +1,12 @@
 {
   "name": "gridlinks",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codemarc/gridlinks"
+   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
