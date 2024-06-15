@@ -2,4 +2,4 @@
 
 ---
 
-[Back](implement) << Test >> [Next](publish)
+[Back «](implement)  __Test__  [» Next](publish)

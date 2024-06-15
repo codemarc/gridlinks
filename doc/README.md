@@ -15,7 +15,7 @@
 </p>
 
 
-[Documentation](./doc/README.md) for this project is located in the [docs] folder and using [docsify] we created the [gridlinks][docsite] docsite, deployed at [codemarc.net/doc/gridlinks][docsite].
+[Documentation](./doc/README.md) for this [project] is located in the [docs] folder and using [docsify] we created the [gridlinks][docsite] docsite, deployed at [codemarc.net/doc/gridlinks][docsite].
 
 
 ## Introduction
@@ -102,13 +102,13 @@ GRIDLINKS
 +---public                  // folder for public assets
 |
 \---src                     // source code for the extension
+    +---components
     +---data
     +---pages
         App.jsx
         App.css
         index.css
         main.jsx
-        +---components
         +---settings
 
 
@@ -238,12 +238,14 @@ Then connect to http://localhost:3000
 
 ![](img/gridlinks-step2.png)
 
+
 ---
 
-[Top](#top) << Gridlinks >> [Design](design)
+[Back «](#top)  __Gridlinks__  [» Next](design)
 
 
 <!-- Engage Cloaking Device -->
+[project]: https://github.com/codemarc/gridlinks/tree/main
 [docsite]: https://codemarc.net/doc/gridlinks
 [docsify]: https://docsify.js.org/#/
 [docs]: https://github.com/codemarc/gridlinks/tree/main/doc

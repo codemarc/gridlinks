@@ -1,35 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from "react"
+import { Route, Routes } from "react-router-dom"
+import { createTheme, ThemeProvider, CssBaseline } from "@mui/material"
+import "./App.css"
 
-function App() {
-  const [count, setCount] = useState(0)
+import Header from "./components/Header"
+import Home from "./pages/Home"
+import Search from "./pages/Search"
+import { Settings, P1, P2, P3, P4, P5, P6, P7, P8 } from "./pages/Settings"
+import packageJson from "../package.json"
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+const { name, version } = packageJson
+
+export default function App() {
+   const ls = JSON.parse(localStorage.getItem(name) ?? `{"version": "${version}" ,"dm":false}` )
+   const [darkMode, setDarkMode] = useState(ls.dm ?? false)
+
+   useEffect(() => {
+      if (darkMode) {
+         document.body.classList.add("dark-mode")
+      } else {
+         document.body.classList.remove("dark-mode")
+      }
+   }, [darkMode])
+
+   const themeProps = { version, darkMode, setDarkMode }
+   const theme = createTheme({
+      palette: { mode: darkMode ? "dark" : "light" },
+   })
+
+   return (
+      <ThemeProvider theme={theme}>
+         <CssBaseline />
+         <Header themeProps={themeProps} />
+         <Routes>
+            <Route path="/" element={<Home themeProps={themeProps} />} />
+            <Route path="/search" element={<Search themeProps={themeProps} />} />
+            <Route path="/settings" element={<Settings themeProps={themeProps} />} />
+            <Route path="/p1" element={<P1 themeProps={themeProps} />} />
+            <Route path="/p2" element={<P2 themeProps={themeProps} />} />
+            <Route path="/p3" element={<P3 themeProps={themeProps} />} />
+            <Route path="/p4" element={<P4 themeProps={themeProps} />} />
+            <Route path="/p5" element={<P5 themeProps={themeProps} />} />
+            <Route path="/p6" element={<P6 themeProps={themeProps} />} />
+            <Route path="/p7" element={<P7 themeProps={themeProps} />} />
+            <Route path="/p8" element={<P8 themeProps={themeProps} />} />
+            {/* This is a catch-all route */}
+            <Route path="*" element={<Home themeProps={themeProps} />} />
+         </Routes>
+      </ThemeProvider>
+   )
 }
-
-export default App

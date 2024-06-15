@@ -4,8 +4,9 @@
   - [Opinionated](/#Opinionated)
   - [Chrome Extension](/#Chrome-Extension)
   - [Dev Build Test](/#Wash-Rinse-Repeat)
-
 * [Design](design)
 * [Implement](implement)
+  - [Reform](implement#reform)
+  - [Components](implement#components)
 * [Test](test)
 * [Publish](publish)

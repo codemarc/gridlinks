@@ -1,5 +1,6 @@
 # Publish
 
+
 ---
 
-[Back](test) << Publish >> [Next](/)
+[Back «](test)  __Publish__  [» Next](README)
