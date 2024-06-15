@@ -1,9 +1,14 @@
 {
-  "name": "tmdp-doc",
-  "version": "0.0.1",
+  "name": "gridlinks-doc",
+  "description": "build and deploy the gridlinks doc site",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "setup": "yarn global add docsify-cli  && docsify init",
-    "start": "docsify serve -p 3001 ."
+    "start": "docsify serve -p 3001 .",
+    "deploy": "node deploy.js"
+  },
+  "dependencies": {
+    "shelljs.exec": "^1.1.8"
   }
 }

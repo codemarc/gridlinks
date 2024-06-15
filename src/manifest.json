@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "CodeMarks",
+  "version": "0.0.1",
+  "description": "codemarks react vite based chrome extension starter",
+  "homepage_url": "https://codemarc.net",
+  "author": {
+    "email": "marc@codemarc.net"
+  },
+  "action": { "default_popup": "index.html" },
+  "icons": {
+    "16": "assets/logo16.png",
+    "32": "assets/logo32.png",
+    "48": "assets/logo48.png",
+    "128": "assets/logo128.png"
+  }
+}

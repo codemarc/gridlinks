@@ -1,8 +1,13 @@
 {
   "name": "gridlinks",
+
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.2",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codemarc/gridlinks"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -14,6 +19,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@crxjs/vite-plugin": "^1.0.14",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react-swc": "^3.5.0",
