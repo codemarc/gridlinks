@@ -4,6 +4,7 @@ This document provides a roadmap to transform the scaffolding that was generated
 usable chrome extension that look something like the wireframe we designed.
 
 ## Reform
+![GitHub Tag](https://img.shields.io/badge/tag-STEP2-blue)
 
 First we need to reform the current scaffolding code, to shape it into a structure that resembles the [opinionated](/#Opinionated) structure that was previously discussed.
 Lets kick off the dev server and get started
@@ -151,6 +152,57 @@ and when we ready to start working on the header.
 ## Components
 
 React components are the building blocks of any React application. They are JavaScript functions or classes that optionally accept inputs, called "props", and return a React element that describes how a section of the UI should appear.
+
+### Header and IconBar
+
+![GitHub Tag](https://img.shields.io/badge/tag-STEP3-blue)
+
+The goal of step three is to turn the Header porion of the design into a Header component. We do this using standard MUI components and create a few of own.
+
+<img src="img/gridlinks-frame2.png"/>
+
+At this point we can sanitize our two css files so we end up with
+
+***App.css***
+```css
+#root {  width: 840px;  min-height: 376px;  line-height: 1;}
+
+header {   height: 50px;   margin-top: -12px; }
+
+#root > div > header > div > div > span > div svg {
+   color: rgb(255 255 255);
+   font-size: 20px;
+   width: 18px;
+   margin-left: 0px;
+ }
+```
+
+and
+***index.css***
+
+```css
+   ⋮
+   a {
+     font-weight: 500;
+     color:white;
+     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+     text-decoration: inherit;
+   }
+   a:hover {
+     color:white;
+     text-decoration: inherit;
+   }
+
+   body {
+     margin: 0;
+     display: flex;
+     min-width: 320px;
+     min-height: 100vh;
+   }
+  ⋮
+```
+
+Where we  replaced the link color with white and remove the place-items:center style from the body
 
 ---
 

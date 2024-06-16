@@ -23,7 +23,7 @@ export default function App() {
       }
    }, [darkMode])
 
-   const themeProps = { version, darkMode, setDarkMode }
+   const themeProps = { name, version, darkMode, setDarkMode }
    const theme = createTheme({
       palette: { mode: darkMode ? "dark" : "light" },
    })

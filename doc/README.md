@@ -157,11 +157,11 @@ Every [chrome extension] include a manifest.json file that describes the extensi
 ```javascript
 {
   "manifest_version": 3,
-  "name": "CodeMarks",
-  "version": "0.0.1",
-  "description": "codemarks react vite based chrome extension starter",
+  "name": "Gridlinks",
+  "description": "Codemarc's Gridlinks implementation - react vite based chrome extension starter",
+  "homepage_url": "https://codemarc.net/doc/gridlinks/#/",
   "author": {
-    "email": "marc@codemarc.net"
+    "email": "codemarc@gmail.com"
   },
   "action": { "default_popup": "index.html" },
   "icons": {

@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "CodeMarks",
+  "name": "Gridlinks",
   "description": "Codemarc's Gridlinks implementation - react vite based chrome extension starter",
   "homepage_url": "https://codemarc.net/doc/gridlinks/#/",
   "author": {
