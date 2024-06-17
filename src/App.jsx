@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Route, Routes } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material"
 import "./App.css"
 
@@ -29,6 +29,7 @@ export default function App() {
    })
 
    return (
+      <BrowserRouter>
       <ThemeProvider theme={theme}>
          <CssBaseline />
          <Header themeProps={themeProps} />
@@ -48,5 +49,6 @@ export default function App() {
             <Route path="*" element={<Home themeProps={themeProps} />} />
          </Routes>
       </ThemeProvider>
+      </BrowserRouter>
    )
 }
