@@ -3,4 +3,4 @@
 
 ---
 
-[Back «](test)  __Publish__  [» Next](README)
+[Back «](pages)  __Publish__  [» Next](README)
