@@ -3,10 +3,10 @@
 This document provides a roadmap to transform the scaffolding that was generated into a
 usable chrome extension that look something like the wireframe we designed.
 
-## Reform
+## Re-form
 ![GitHub Tag](https://img.shields.io/badge/tag-STEP2-blue)
 
-First we need to reform the current scaffolding code, to shape it into a structure that resembles the [opinionated](/#Opinionated) structure that was previously discussed.
+First we need to re-form/transform the current scaffolding code, to shape it into a structure that resembles the [opinionated](/#Opinionated) structure that was previously discussed.
 Lets kick off the dev server and get started
 
 > marc:~/cmc/gridlinks$ yarn dev
@@ -154,7 +154,7 @@ and when we ready to start working on the header.
 React components are the building blocks of any React application. They are JavaScript functions or classes that optionally accept inputs, called "props", and return a React element that describes how a section of the UI should appear.
 
 ### Header and IconBar
-
+![](https://img.shields.io/badge/component-darkgreen)
 ![GitHub Tag](https://img.shields.io/badge/tag-STEP3-blue)
 
 The goal of step three is to turn the Header porion of the design into a Header component. We do this using standard MUI components and create a few of own.
@@ -204,6 +204,77 @@ and
 
 Where we  replaced the link color with white and remove the place-items:center style from the body
 
----
+### Message of the Day
+![](https://img.shields.io/badge/component-darkgreen)
+![GitHub Tag](https://img.shields.io/badge/tag-STEP4-blue)
 
-[Back «](design) __Implement__  [» Next](test)
+This is component was created using generative ai which is a computer program that takes in a lot of information (data), learns from it (artificial intelligence), and then comes up with something new all on its own (generative). In our case use OpenAI's ChatGPT 4o we create the message of the day component using this prompt:
+
+> CodeMarc:
+>
+> create a list of "message of the day" quotes formatted as an array of json objects containing the fields message and author
+
+<br/>
+
+```code
+ChatGPT:
+
+[
+    {
+        "message": "The only way to do great work is to love what you do.",
+        "author": "Steve Jobs"
+    },
+    {
+        "message": "Success is not the key to happiness. Happiness is the key to success.",
+        "author": "Albert Schweitzer"
+    },
+    {
+        "message": "Believe you can and you're halfway there.",
+        "author": "Theodore Roosevelt"
+    },
+    ⋮
+]
+```
+
+> CodeMarc:
+>
+> regenerate the quotes and make sure there is at least 50 of them. Then save them as a file named quotes.json
+
+```code
+ChatGPT:
+
+I have generated the JSON file with at least 50 quotes. You can download the file here. ​
+```
+> CodeMarc:
+>
+> using the json object as a data source create a react component that renders a message picked at random from the list
+
+```code
+import { useState, useEffect } from 'react'ß
+import quotes from '../data/quotes.json'
+
+const MessageOfTheDay = () => {
+    const [quote, setQuote] = useState({});
+
+    useEffect(() => {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        setQuote(quotes[randomIndex]);
+    }, []);
+
+    return (
+        <div>
+            <h1>Message of the Day</h1>
+            <p>"{quote.message}"</p>
+            <p><strong>- {quote.author}</strong></p>
+        </div>
+    );
+};
+
+export default MessageOfTheDay
+```
+
+This is the genesis of the message of the day component. When you are ready, have a look at the source to see [the completed version](https://github.com/codemarc/gridlinks/blob/c6766d46ba7f8b6aa48db5ae1edf9afc8d172753/src/components/Motd.jsx).
+
+
+
+
