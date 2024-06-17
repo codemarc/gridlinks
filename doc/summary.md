@@ -8,5 +8,7 @@
 * [Implement](implement)
   - [Reform](implement#reform)
   - [Components](implement#components)
+    - [Header and Iconbar](implement#header-and-iconbar)
+    - [Message of the Day]((implement#message-of-the-day)
 * [Test](test)
 * [Publish](publish)
