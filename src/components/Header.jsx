@@ -1,24 +1,19 @@
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
-import { AppBar, Toolbar, Box, Button } from "@mui/material";
-import IconBar from "./IconBar";
+import PropTypes from "prop-types"
+import { Link } from "react-router-dom"
+import { AppBar, Toolbar, Box, Button } from "@mui/material"
+import IconBar from "./IconBar"
 
-const website = "https://codemarc.net";
+const website = "https://codemarc.net"
 
 export default function Header({ themeProps }) {
-   const { name, version, darkMode, setDarkMode } = themeProps;
-   const versionText = `v${version}`;
+   const { name, ls, darkMode, setDarkMode } = themeProps
+   const versionText = `v${ls.version}`
 
    const toggleDarkMode = () => {
-      setDarkMode(!darkMode);
-      localStorage.setItem(
-         name,
-         JSON.stringify({
-            version: versionText,
-            dm: !darkMode,
-         })
-      );
-   };
+      ls.dm = !darkMode
+      setDarkMode(ls.dm)
+      localStorage.setItem(name,JSON.stringify(ls))
+   }
 
    return (
       <>
@@ -38,7 +33,7 @@ export default function Header({ themeProps }) {
                         color="inherit"
                         href=""
                         onClick={() => {
-                           toggleDarkMode();
+                           toggleDarkMode()
                         }}
                         title="Toggle Dark Mode"
                         sx={{ "&:focus": { outline: "none" } }}
@@ -79,20 +74,20 @@ export default function Header({ themeProps }) {
                      </Button>
                   </Box>
                   <Box sx={{ flexGrow: 1 }}>
-                     <IconBar />
+                     <IconBar themeProps={themeProps} />
                   </Box>
                </Toolbar>
             </AppBar>
          </Box>
       </>
-   );
+   )
 }
 
 Header.propTypes = {
    themeProps: PropTypes.shape({
       name: PropTypes.string.isRequired,
-      version: PropTypes.string.isRequired,
+      ls: PropTypes.object.isRequired,
       darkMode: PropTypes.bool.isRequired,
       setDarkMode: PropTypes.func.isRequired,
    }).isRequired,
-};
+}

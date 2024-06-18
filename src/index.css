@@ -32,6 +32,8 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  max-width: 800px;
+  max-height: 400px;
 }
 
 h1 {

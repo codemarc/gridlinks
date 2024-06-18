@@ -8,11 +8,33 @@ import Home from "./pages/Home"
 import Search from "./pages/Search"
 import { Settings, P1, P2, P3, P4, P5, P6, P7, P8 } from "./pages/Settings"
 import packageJson from "../package.json"
-
 const { name, version } = packageJson
 
 export default function App() {
-   const ls = JSON.parse(localStorage.getItem(name) ?? `{"version": "${version}" ,"dm":false}` )
+
+   let stor = localStorage.getItem(name)
+   if (stor === null || stor === undefined) {
+      stor = JSON.stringify({
+         version: version,
+         dm: false,
+         header: {
+            gh: "https://github.com",
+            li: "https://linkedin.com",
+            tw: "https://twitter.com",
+            ig: "https://instagram.com",
+            fb: "https://facebook.com",
+            ic: "https://icloud.com",
+            ib: "https://outlook.office.com/mail/",
+            ca: "https://outlook.office.com/calendar/view/month",
+            go: "https://www.google.com/travel/flights",
+            sm: "https://client.schwab.com/app/accounts/positions/#/",
+         }
+      })
+      localStorage.setItem(name, stor)
+   }
+
+
+   const ls = JSON.parse(stor)
    const [darkMode, setDarkMode] = useState(ls.dm ?? false)
 
    useEffect(() => {
@@ -23,7 +45,7 @@ export default function App() {
       }
    }, [darkMode])
 
-   const themeProps = { name, version, darkMode, setDarkMode }
+   const themeProps = { name, ls, darkMode, setDarkMode }
    const theme = createTheme({
       palette: { mode: darkMode ? "dark" : "light" },
    })
