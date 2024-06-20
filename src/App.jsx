@@ -28,6 +28,7 @@ export default function App() {
             ca: "https://outlook.office.com/calendar/view/month",
             go: "https://www.google.com/travel/flights",
             sm: "https://client.schwab.com/app/accounts/positions/#/",
+            ai: "https://chatgpt.com/"
          }
       })
       localStorage.setItem(name, stor)

@@ -3,13 +3,10 @@ import { useState, useEffect } from 'react'
 import { useNavigate, useLocation } from "react-router-dom"
 import { Box, Container, Grid } from "@mui/material"
 import { TextField, Button, Switch } from "@mui/material"
-import { fontSize, textAlign } from "@mui/system"
-import { ChromeReaderModeOutlined } from "@mui/icons-material"
-
 
 export default function Settings({themeProps}) {
    const { name, ls, darkMode, setDarkMode } = themeProps
-   const {gh,li,tw,ig,fb,ic,ib,ca,go,sm} = ls.header
+   const {gh,li,tw,ig,fb,ic,ib,ca,go,sm,ai} = ls.header
 
    const [githubUrl, setGithubUrl] = useState(gh ?? '')
    const [linkedinUrl, setLinkedinUrl] = useState(li ??'')
@@ -21,6 +18,8 @@ export default function Settings({themeProps}) {
    const [calendarUrl, setCalendarUrl] = useState(ca ?? '')
    const [travelUrl, setTravelUrl] = useState(go ?? '')
    const [brokerUrl, setBrokerUrl] = useState(sm ?? '')
+   const [chataiUrl, setChataiUrl] = useState(ai ?? '')
+
 
    useEffect(() => {
       setGithubUrl(gh)
@@ -33,7 +32,8 @@ export default function Settings({themeProps}) {
       setCalendarUrl(ca)
       setTravelUrl(go)
       setBrokerUrl(sm)
-    }, [gh, li, tw, ig, fb, ic, ib, ca, go, sm])
+      setChataiUrl(ai)
+    }, [gh, li, tw, ig, fb, ic, ib, ca, go, sm, ai])
 
 
     const box1 = { "fontFamily": "Verdana, Geneva, Tahoma, sans-serif", "margin": "12px 0px 0px 2px" }
@@ -61,6 +61,7 @@ export default function Settings({themeProps}) {
       ls.header.ca = calendarUrl
       ls.header.go = travelUrl
       ls.header.sm = brokerUrl
+      ls.header.ai = chataiUrl
       localStorage.setItem(name, JSON.stringify(ls))
       handleNav() }
 
@@ -105,8 +106,12 @@ export default function Settings({themeProps}) {
             <TextField name="travel" key="travelUrl" label="Travel URL" size="small" sx={line}
                onChange={(event) => setTravelUrl(event.target.value)} value={travelUrl} />
 
-            <TextField name="brokerage" key="brokerUrl" label="Broker URL" size="small" sx={lline}
+            <TextField name="brokerage" key="brokerUrl" label="Broker URL" size="small" sx={line}
                onChange={(event) => setBrokerUrl(event.target.value)} value={brokerUrl} />
+
+            <TextField name="genai" key="chataiUrl" label="AI URL" size="small" sx={lline}
+               onChange={(event) => setChataiUrl(event.target.value)} value={chataiUrl} />
+
 
          <Grid item sx={button1}>
             <Switch sx={{...button2, marginLeft:"22px"}}  checked={darkMode} onChange={toggleDarkMode} inputProps={{ 'aria-label': 'Dark mode toggle' }}/>
