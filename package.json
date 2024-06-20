@@ -1,7 +1,8 @@
 {
   "name": "gridlinks",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.6",
+  "description": "https://codemarc.net/doc/gridlinks/#/",
   "type": "module",
   "repository": {
     "type": "git",
