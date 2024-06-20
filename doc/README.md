@@ -6,7 +6,7 @@
         <img src="https://img.shields.io/badge/g r i d l i n k s -blue?style=for-the-badge">
   </a>
     <font size="3">
-        <br/><a href="https://codemarc/net">a chrome extension by codemarc</a>
+        <br/><a href="https://codemarc.net">a chrome extension by codemarc</a>
         <br/><a aria-label="License" href="https://github.com/codemarc/gridlinks/blob/main/LICENSE">MIT License
   </a>
     </font>
