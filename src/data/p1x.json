@@ -1,0 +1,89 @@
+{
+   "title1": "communications",
+   "href2": "*/p1",
+   "links": [
+      {
+         "name1": "zoom",
+         "href1": "https://zoom.us/",
+         "title1": "Zoom Video Communications",
+         "name2": "slack",
+         "href2": "https://slack.com/",
+         "title2": "Slack: Where Work Happens",
+         "name3": "meet",
+         "href3": "https://meet.google.com/",
+         "title3": "Google Meet: Secure Video Meetings",
+         "name4": "teams",
+         "href4": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
+         "title4": "Microsoft Teams: Group Chat Software"
+      },
+      {
+         "name1": "skype",
+         "href1": "https://www.skype.com/",
+         "title1": "Skype | Communication tool for free calls and chat",
+         "name2": "webex",
+         "href2": "https://www.webex.com/",
+         "title2": "Webex by Cisco: Video Conferencing, Online Meetings, Screen Share",
+         "name3": "discord",
+         "href3": "https://discord.com/",
+         "title3": "Discord | Your Place to Talk and Hang Out",
+         "name4": "jitsi",
+         "href4": "https://meet.jit.si/",
+         "title4": "Jitsi Meet - Free Video Conferencing Solutions"
+      },
+      {
+         "name1": "bluejeans",
+         "href1": "https://www.bluejeans.com/",
+         "title1": "BlueJeans by Verizon | Video Conferencing",
+         "name2": "goTo",
+         "href2": "https://www.gotomeeting.com/",
+         "title2": "GoToMeeting Web Conferencing & Online Meeting Software",
+         "name3": "ringCentral",
+         "href3": "https://www.ringcentral.com/video.html",
+         "title3": "RingCentral Video Meetings"
+       },
+
+       {
+         "name1": "Yammer",
+         "href1": "https://www.yammer.com/",
+         "title1": "Microsoft Yammer | Enterprise Social Network",
+         "name2": "Flock",
+         "href2": "https://flock.com/",
+         "title2": "Flock: Team Messenger & Online Collaboration Platform",
+         "name3": "Zoho",
+         "href3": "https://www.zoho.com/meeting/",
+         "title3": "Zoho Meeting | Online Meeting Software",
+         "name4": "Click",
+         "href4": "https://clickmeeting.com/",
+         "title4": "ClickMeeting: Webinar and Online Meeting Platform"
+     },
+     {
+         "name1": "8x8",
+         "href1": "https://www.8x8.com/products/video-conferencing",
+         "title1": "8x8 Video Meetings: Secure Video Conferencing",
+         "name4": "TeamViewer",
+         "href4": "https://www.teamviewer.com/",
+         "title4": "TeamViewer \u2013 Remote Access and Remote Desktop"
+     },
+     {
+         "name1": "Chanty",
+         "href1": "https://www.chanty.com/",
+         "title1": "Chanty: Simple AI-powered team chat",
+         "name2": "Troop",
+         "href2": "https://www.troopmessenger.com/",
+         "title2": "Troop Messenger: Business Chat App for Team Collaboration",
+         "name3": "Miro",
+         "href3": "https://miro.com/",
+         "title3": "Miro: Online Whiteboard for Visual Collaboration",
+         "name4": "Monday",
+         "href4": "https://monday.com/",
+         "title4": "Monday.com: Work OS"
+     },{
+         "name2": "BigBlueButton",
+         "href2": "https://bigbluebutton.org/",
+         "title2": "BigBlueButton - Open Source Web Conferencing",
+         "name3": "Whereby",
+         "href3": "https://whereby.com/",
+         "title3": "Whereby - Video meetings made easy"
+     }
+   ]
+}
