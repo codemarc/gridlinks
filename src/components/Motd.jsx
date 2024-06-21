@@ -15,7 +15,7 @@ export default function Motd() {
 
     return (
       <Grid container spacing={0}>
-         <Container sx={{ margin: "6px 12px 6px 12px"}}>
+         <Container sx={{ margin: "8px 12px 3px 12px"}}>
             <Link onClick={() => window.open(packageJson.description)} sx={{
                color: theme.palette.mode === "dark" ? "white" : "#1b2051",
                fontSize:"12px",

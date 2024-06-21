@@ -1,7 +1,7 @@
 #root {
-  width: 800px;
-  min-height: 376px;
-  line-height: 1;
+  line-height: 0.55;
+  width:960px;
+  height: 412px;
 }
 
 header {
@@ -11,7 +11,12 @@ header {
 
  #root > div > header > div > div > span > div svg {
    color: rgb(255 255 255);
-   font-size: 20px;
+   font-size: 18px;
+   font-weight: 600;
    width: 18px;
    margin-left: 0px;
+ }
+
+ #root > div > header > div > div > span > div > button {
+   padding: 7px;
  }
