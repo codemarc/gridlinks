@@ -1,6 +1,9 @@
 # gridlinks
 
-Changes for version 0.0.7
+Changes for version 0.0.8
+- added some new links and updated colors
+- added package.js, package dir chrome web store
 
+Changes for version 0.0.7
 - Web store publish
 - Initial version

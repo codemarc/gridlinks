@@ -5,7 +5,8 @@ import { Card, CardHeader, CardContent, CardActionArea } from "@mui/material"
 import { Link, Divider, Button } from "@mui/material"
 import GridItem from "./GridItem"
 
-const basecolor = "#1b2051"
+//const basecolor = "#1b2051"
+const basecolor = "#2185de"
 
 export default function GridCard({ dto }) {
    const navigate = useNavigate()
@@ -17,7 +18,7 @@ export default function GridCard({ dto }) {
         <Link title={dto.tootip1 ?? dto.href1} href={dto.href1} target={dto.target1 ?? "_blank"} sx={{
          fontSize: "9.5pt",
          fontWeight: 500,
-         color: theme.palette.mode === "dark" ? "rgb(162,239,169)" : basecolor,
+         color: theme.palette.mode === "dark" ? "rgb(162,239,169)" : "#1b2051",
          textDecoration: "none",
          textShadow: "none",
          "&:hover": {

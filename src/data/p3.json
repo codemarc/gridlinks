@@ -34,8 +34,7 @@
          "title3": "Hugging Face AI Community"
       },
       {
-         "pre1": "ㅤㅤㅤㅤㅤ▻ art / image ◅",
-         "name1": ""
+         "name1": "-art / image"
       },
       {
          "pre1": " ",
@@ -68,20 +67,21 @@
 
       },
       {
-         "pre1": "ㅤㅤㅤㅤㅤㅤ▻ coding ◅",
-         "name1": ""
+         "name1": "- coding  "
       },
-
       {
-         "pre1": "ㅤㅤㅤ",
+         "pre1": " ",
          "name1": "copilot",
          "href1": "https://github.com/features/copilot",
          "title1": "GitHub Copilot",
 
-         "pre2": "ㅤ",
-         "name2": "code whisperer",
+         "name2": "codewhisperer",
          "href2": "https://aws.amazon.com/codeguru/code-whisperer/",
-         "title2": "Amazon CodeWhisperer - integrated with AWS services"
+         "title2": "Amazon CodeWhisperer - integrated with AWS services",
+
+         "name3": "sourcegraph",
+         "href3": "https://sourcegraph.com/search"
+
       }
 
 

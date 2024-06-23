@@ -7,7 +7,7 @@ const Div = styled('div')(({ theme }) => ({
   ...theme.typography.button,
   textTransform: 'none',
   marginTop: "-1px",
-  color: theme.palette.mode === "dark" ? "lightblue" : "green",
+  color: theme.palette.mode === "dark" ? "lightblue" : "#1b2051",
   fontSize: "8pt",
 }))
 
@@ -20,7 +20,7 @@ export default function CardItem({ dto }) {
    const blink = {
       padding: "3px",
       textDecoration: "none",
-      textShadow: "0px 0px 1px #aaa",
+      textShadow: "none",
       textTransform: "none",
       fontFamily: "mukta",
       fontSize: "8.5pt",
@@ -30,7 +30,7 @@ export default function CardItem({ dto }) {
          color: theme.palette.mode === "dark" ? "rgb(76,249,77)" : "green",
          backgroundColor: theme.palette.mode === "dark" ? "rgba(128,128,128,0.5)" : "rgba(128,128,128,0.5)",
          textDecoration: "none",
-         cursor: "pointer",
+         cursor: "hand",
       }
    }
 
@@ -38,20 +38,20 @@ export default function CardItem({ dto }) {
   return (
     <Stack direction="row" alignItems="left" key={idx} sx={{ width: "100%" }}>
       {itHas(o, "label") && o.label.startsWith("-" ) ? (
-        <Divider key={idx} sx={{ fontSize: "8.5pt", marginTop: "3px", marginBottom: "6px",height:"1px", backgroundColor:"#ccc" }}>
+        <Divider key={idx} sx={{ fontSize: "8.5pt", marginTop: "3px", marginBottom: "3px",height:"1px", backgroundColor:"#ccc" }}>
          ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</Divider>
       ) : (
         <>
           {itHas(o, "name1") &&
             o.name1.startsWith("-") ? ( <>
-               <Divider key={idx} sx={{ fontSize: "8.5pt", marginTop: "9px", marginBottom: "1ßpx",height:"1px", backgroundColor:"#ccc" }}>
-         ㅤㅤㅤㅤㅤ</Divider>
-         <Link sx={blink} key={idx + "2"} href={o.href1} target={o.target1 ?? "_blank"} title={o.title1 ?? o.href1}>
+               <Divider key={idx} sx={{ fontSize: "8.5pt", marginTop: "8px", marginBottom: "1px",height:"1px", backgroundColor:"#ccc" }}>
+         ㅤㅤㅤㅤ</Divider>
+         <Link sx={{...blink,paddingTop:"8px",lineHeight:"0.25"}} key={idx + "2"} href={o.href1} target={o.target1 ?? "_blank"} title={o.title1 ?? o.href1}>
                ㅤ{o.name1.substring(1)}ㅤ
               </Link>
 
-               <Divider key={idx} sx={{ fontSize: "8.5pt", marginTop: "9px", marginBottom: "1px",height:"1px", backgroundColor:"#ccc" }}>
-         ㅤㅤㅤㅤㅤ</Divider></>) :
+               <Divider key={idx} sx={{ fontSize: "8.5pt", marginTop: "8px", marginBottom: "1px",height:"1px", backgroundColor:"#ccc" }}>
+         ㅤㅤㅤㅤ</Divider></>) :
           (
             <>
               <Div>{o.pre1}</Div>
