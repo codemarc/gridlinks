@@ -1,125 +1,113 @@
 {
-   "title1": "p1",
-   "href1": "p1",
+   "title1": "communicate",
+   "href1": "https://www.youtube.com/@allin",
    "href2": "*/p1",
-   "links":[
-    {
-      "name1": "link01xx",
-      "href1": "href1",
-      "title1": "title1",
-      "name2": "link02xx",
-      "href2": "href2",
-      "title2": "title2",
-      "name3": "link03xx",
-      "href3": "href3",
-      "title3": "title3",
-      "name4": "link04xx",
-      "href4": "href4",
-      "title4": "title4"
-     }, {
-      "name1": "link05",
-      "href1": "href1",
-      "title1": "title1",
-      "name2": "link06",
-      "href2": "href2",
-      "title2": "title2",
-      "name3": "link07",
-      "href3": "href3",
-      "title3": "title3",
-      "pre1": "ㅤ ▻",
-      "name4": "link08",
-      "href4": "href4",
-      "title4": "title4",
-      "post4": "◅"
-     }, {
-      "pre1": "ㅤㅤ",
-      "name1": "link09",
-      "href1": "href1",
-      "title1": "title1",
-      "name2": "link10",
-      "href2": "href2",
-      "title2": "title2",
-      "name3": "link11",
-      "href3": "href3",
-      "title3": "title3",
-      "name4": "link12",
-      "href4": "href4",
-      "title4": "title4"
-      }, {
-         "name1": "link13",
-         "href1": "href1",
-         "title1": "title1",
-         "pre2": "✫❄",
-         "name2": "link14",
-         "href2": "href2",
-         "title2": "title2",
-         "name3": "link15",
-         "href3": "href3",
-         "title3": "title3",
-         "post3": "❄✫",
-         "name4": "link16",
-         "href4": "href4",
-         "title4": "title4"
-         }, {
-         "name1": "link17",
-         "href1": "href1",
-         "title1": "title1",
-         "post1": " ┃ ",
-         "name2": "link18",
-         "href2": "href2",
-         "title2": "title2",
-         "post2": " ┃ ",
-         "name3": "link19",
-         "href3": "href3",
-         "title3": "title3",
-         "post3": " ┃ ",
-         "name4": "link20",
-         "href4": "href4",
-         "title4": "title4"
-         }, {
-            "pre1": "ㅤㅤ",
-         "name1": "link21",
-         "href1": "href1",
-         "title1": "title1",
-         "name2": "link22",
-         "href2": "href2",
-         "title2": "title2",
-         "name3": "link23",
-         "href3": "href3",
-         "title3": "title3",
-         "name4": "link24",
-         "href4": "href4",
-         "title4": "title4"
-         }, {
+   "links": [
+      {
+         "pre1": " microsoft 365ㅤ",
+         "name1": "work",
+         "href1": "https://www.office.com/?auth=2",
+         "post1": "|",
+         "name2": "home",
+         "href2": "https://www.office.com/?auth=1"
+      },
+      {
+         "pre1": " google officeㅤ",
+         "name1": "gmail",
+         "href1": "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox",
+         "pre3": "|",
+         "name3": "dashboard",
+         "href3": "https://workspace.google.com/u/1/dashboard"
+      },
+      {
+         "label": "-"
+      },
+      {
+         "pre1": "ㅤ",
+         "name1": "zoom",
+         "href1": "https://zoom.us/",
+         "title1": "Zoom Video Communications",
+         "post1": "ㅤ",
+         "name2": "slack",
+         "href2": "https://slack.com/",
+         "title2": "Slack: Where Work Happens",
+         "post2": "ㅤ",
+         "name3": "meet",
+         "href3": "https://meet.google.com/",
+         "title3": "Google Meet: Secure Video Meetings",
+         "post3": "ㅤ",
+         "name4": "teams",
+         "href4": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
+         "title4": "Microsoft Teams: Group Chat Software"
+      },
+      {
          "pre1": "ㅤㅤ",
-         "name1": "link25",
-         "href1": "href1",
-         "title1": "title1",
-         "name2": "link26",
-         "href2": "href2",
-         "title2": "title2",
-         "name3": "link27",
-         "href3": "href3",
-         "title3": "title3",
-         "name4": "link28",
-         "href4": "href4",
-         "title4": "title4"
-         }, {
-         "pre1":"🐋",
-         "name1": "link29",
-         "href1": "href1",
-         "title1": "title1",
-         "name2": "link30",
-         "href2": "href2",
-         "title2": "title2",
-         "post2": "🐶",
-         "name3": "link31",
-         "href3": "href3",
-         "title3": "title3",
-         "name4": "link32",
-         "href4": "href4",
-         "title4": "title4",
-         "post4": "🐋"
-         }
-      ]
-   }
+         "name1": "chanty",
+         "href1": "https://www.chanty.com/",
+         "title1": "Chanty: Simple AI-powered team chat",
+         "name2": "troop",
+         "href2": "https://www.troopmessenger.com/",
+         "title2": "Troop Messenger: Business Chat App for Team Collaboration",
+         "name3": "miro",
+         "href3": "https://miro.com/",
+         "title3": "Miro: Online Whiteboard for Visual Collaboration",
+         "name4": "monday",
+         "href4": "https://monday.com/",
+         "title4": "Monday.com: Work OS"
+     },{
+
+         "pre1": "ㅤ",
+         "name1": "yammer",
+         "href1": "https://www.yammer.com/",
+         "title1": "Microsoft Yammer | Enterprise Social Network",
+
+         "pre2": " ",
+         "name2": "flock",
+         "href2": "https://flock.com/",
+         "title2": "Flock: Team Messenger & Online Collaboration Platform",
+
+         "pre3": " ",
+         "name3": "zoho",
+         "href3": "https://www.zoho.com/meeting/",
+         "title3": "Zoho Meeting | Online Meeting Software",
+
+         "pre4": " ",
+         "name4": "click",
+         "href4": "https://clickmeeting.com/",
+         "title4": "ClickMeeting: Webinar and Online Meeting Platform"
+      },
+      {
+         "pre1": "ㅤ",
+         "name1": "glue",
+         "href1": "https://glue.ai/name1",
+         "pre2": " ",
+         "name2": "skype",
+         "href2": "https://www.skype.com/",
+         "title2": "Skype | Communication tool for free calls and chat",
+         "pre3": " ",
+         "name3": "webex",
+         "href3": "https://www.webex.com/",
+         "title3": "Webex by Cisco: Video Conferencing, Online Meetings, Screen Share",
+         "name4": "discord",
+         "href4": "https://discord.com/",
+         "title4": "Discord | Your Place to Talk and Hang Out",
+         "pre4": " "
+      },
+      {
+         "pre1": "ㅤ",
+         "name1": "jitsi",
+         "href1": "https://meet.jit.si/",
+         "title1": "Jitsi Meet - Free Video Conferencing Solutions",
+         "name2": "bluejeans",
+         "href2": "https://www.bluejeans.com/",
+         "title2": "BlueJeans by Verizon | Video Conferencing",
+         "name3": "goTo",
+         "href3": "https://www.gotomeeting.com/",
+         "title3": "GoToMeeting Web Conferencing & Online Meeting Software",
+         "name4": "ringCentral",
+         "href4": "https://www.ringcentral.com/video.html",
+         "title4": "RingCentral Video Meetings"
+
+      }
+   ]
+}

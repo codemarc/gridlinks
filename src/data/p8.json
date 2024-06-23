@@ -1,112 +1,65 @@
 {
-   "title1": "p8",
+   "title1": "ecomm",
    "href1": "p8",
    "href2": "*/p8",
-   "links":[
-    {
-      "name1": "link01",
-      "href1": "href1",
-      "title1": "title1",
-      "name2": "link02",
-      "href2": "href2",
-      "title2": "title2",
-      "name3": "link03",
-      "href3": "href3",
-      "title3": "title3",
-      "name4": "link04",
-      "href4": "href4",
-      "title4": "title4"
-     }, {
-      "name1": "link05",
-      "href1": "href1",
-      "title1": "title1",
-      "name2": "link06",
-      "href2": "href2",
-      "title2": "title2",
-      "name3": "link07",
-      "href3": "href3",
-      "title3": "title3",
-      "name4": "link08",
-      "href4": "href4",
-      "title4": "title4"
-     }, {
-      "name1": "link09",
-      "href1": "href1",
-      "title1": "title1",
-      "name2": "link10",
-      "href2": "href2",
-      "title2": "title2",
-      "name3": "link11",
-      "href3": "href3",
-      "title3": "title3",
-      "name4": "link12",
-      "href4": "href4",
-      "title4": "title4"
-   }, {
-      "name1": "link13",
-      "href1": "href1",
-      "title1": "title1",
-      "name2": "link14",
-      "href2": "href2",
-      "title2": "title2",
-      "name3": "link15",
-      "href3": "href3",
-      "title3": "title3",
-      "name4": "link16",
-      "href4": "href4",
-      "title4": "title4"
-   }, {
-      "name1": "link17",
-      "href1": "href1",
-      "title1": "title1",
-      "name2": "link18",
-      "href2": "href2",
-      "title2": "title2",
-      "name3": "link19",
-      "href3": "href3",
-      "title3": "title3",
-      "name4": "link20",
-      "href4": "href4",
-      "title4": "title4"
-   }, {
-      "name1": "link21",
-      "href1": "href1",
-      "title1": "title1",
-      "name2": "link22",
-      "href2": "href2",
-      "title2": "title2",
-      "name3": "link23",
-      "href3": "href3",
-      "title3": "title3",
-      "name4": "link24",
-      "href4": "href4",
-      "title4": "title4"
-     }, {
-      "name1": "link25",
-      "href1": "href1",
-      "title1": "title1",
-      "name2": "link26",
-      "href2": "href2",
-      "title2": "title2",
-      "name3": "link27",
-      "href3": "href3",
-      "title3": "title3",
-      "name4": "link28",
-      "href4": "href4",
-      "title4": "title4"
-   }, {
-      "name1": "link29",
-      "href1": "href1",
-      "title1": "title1",
-      "name2": "link30",
-      "href2": "href2",
-      "title2": "title2",
-      "name3": "link31",
-      "href3": "href3",
-      "title3": "title3",
-      "name4": "link32",
-      "href4": "href4",
-      "title4": "title4"
-   }
- ]
+   "links": [
+      {
+         "name1": "the puppy leo shop",
+         "href1": "http://puppyleo.com",
+         "pre2": "ㅤ🐶ㅤ",
+         "name2": "admin",
+         "href2": "https://admin.shopify.com/"
+      },
+      {
+         "label": "-"
+      },
+      {
+         "pre1": "shopify:ㅤ",
+         "name1": "docs",
+         "href1": "https://shopify.dev/docs",
+         "post1": "|",
+
+         "name2": "api",
+         "href2": "https://shopify.dev/docs/api",
+         "post2": "|",
+
+         "name3": "liquid",
+         "href3": "https://shopify.dev/docs/themes/liquid/reference",
+         "post3": "|",
+
+         "name4": "src",
+         "href4": "https://shopify.github.io"
+      },
+      {
+         "pre1": "ㅤ",
+         "name1": "zendrop",
+         "href1": "https://app.zendrop.com/dashboard",
+
+         "name2": "cj",
+         "href2": "https://www.cjdropshipping.com/",
+
+         "name3": "shineon",
+         "href3": "https://www.shineon.com/",
+
+         "name4": "printful",
+         "href4": "https://www.printful.com/"
+      },
+      {
+         "name1":"-social",
+         "href1":"https://buffer.com/library/social-media-sites/#20-tumblr-%E2%80%94-135-million-maus",
+         "tooltip1": "buffer.com Buffer helps you build an audience organically. We’re a values-driven company that provides affordable, intuitive marketing tools for ambitious people and teams."
+       },
+      {
+         "name1": "ㅤ"
+      },
+      {
+         "name1": "ㅤ"
+      },
+      {
+         "name1": "ㅤ"
+      },
+      {
+         "name1": "ㅤ"
+      }
+   ]
 }
