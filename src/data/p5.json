@@ -1,55 +1,86 @@
 {
    "title1": "microsoft",
    "href1": "https://www.microsoft.com/en-us/",
-   "href2": "*/p5",
+   "href2": "*/settings",
    "links": [
       {
-         "name1": "Azure",
+         "name1": "learn",
+         "href1": "https://learn.microsoft.com",
+         "title1": "Microsoft Learn (this is what was once msdn, then docs and then learn)"
+      },
+      {
+         "name1": "power platform",
+         "href1": "https://learn.microsoft.com/en-us/power-platform/",
+         "name2": "bi",
+         "href2": "https://powerbi.microsoft.com",
+         "title2": "Microsoft Power BI",
+         "post2": "|",
+         "name3": "apps",
+         "href3": "https://powerapps.microsoft.com",
+         "title3": "Microsoft Power Apps",
+         "post3": "|",
+         "name4": "automate",
+         "href4": "https://flow.microsoft.com",
+         "title4": "Microsoft Power Automate"
+      },
+      {
+         "name1": "azure",
          "href1": "https://azure.microsoft.com",
          "title1": "Microsoft Azure",
+         "name3": "function apps",
+         "href3": "https://azure.microsoft.com/services/functions/",
+         "title3": "Azure Functions",
+         "name4": "logic apps",
+         "href4": "https://azure.microsoft.com/services/logic-apps/",
+         "title4": "Azure Logic Apps"
+      },
+      {
+         "name1": "ㅤ"
+      },
+      {
+         "name1": "ㅤ"
+      },
+      {
+         "name1": "ㅤ"
+      },
+      {
+         "name1": "ㅤ"
+      }
+   ],
+   "blinks": [
+      {
          "name2": "VS Code",
          "href2": "https://code.visualstudio.com",
          "title2": "Visual Studio Code",
          "name3": "OneDrive",
          "href3": "https://onedrive.live.com",
-         "title3": "Microsoft OneDrive",
-         "name4": "Power BI",
-         "href4": "https://powerbi.microsoft.com",
-         "title4": "Microsoft Power BI"
+         "title3": "Microsoft OneDrive"
       },
       {
-         "name1": "Azure DevOps",
+         "name1": "DevOps",
          "href1": "https://dev.azure.com",
-         "title1": "Microsoft Azure DevOps",
-         "name2": "Power Apps",
-         "href2": "https://powerapps.microsoft.com",
-         "title2": "Microsoft Power Apps"
+         "title1": "Microsoft Azure DevOps"
       },
       {
-         "name3": "Power Automate",
-         "href3": "https://flow.microsoft.com",
-         "title3": "Microsoft Power Automate",
-         "name4": "Microsoft AI",
-         "href4": "https://www.microsoft.com/ai",
-         "title4": "Microsoft AI"
+         "name4": "Azure AI",
+         "href4": "https://azure.microsoft.com/services/cognitive-services/",
+         "title4": "Azure Cognitive Services"
       },
       {
-         "name1": "ㅤ"
+         "name1": "Microsoft Graph",
+         "href1": "https://developer.microsoft.com/graph",
+         "title1": "Microsoft Graph",
+         "name2": "Azure Kubernetes Service",
+         "href2": "https://azure.microsoft.com/services/kubernetes-service/",
+         "title2": "Azure Kubernetes Service"
       },
       {
-         "name1": "ㅤ"
-      },
-      {
-         "name1": "ㅤ"
-      },
-      {
-         "name1": "ㅤ"
-      },
-      {
-         "name1": "ㅤ"
-      },
-      {
-         "name1": "ㅤ"
+         "name3": "Azure Active Directory",
+         "href3": "https://azure.microsoft.com/services/active-directory/",
+         "title3": "Azure Active Directory",
+         "name4": "Visual Studio",
+         "href4": "https://visualstudio.microsoft.com",
+         "title4": "Microsoft Visual Studio"
       }
    ]
 }

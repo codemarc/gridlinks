@@ -1,26 +1,26 @@
 [
     {
-        "name1": "Azure",
+        "name1": "✅Azure",
         "href1": "https://azure.microsoft.com",
         "title1": "Microsoft Azure",
-        "name2": "VS Code",
+        "name2": "✅VS Code",
         "href2": "https://code.visualstudio.com",
         "title2": "Visual Studio Code",
-        "name3": "GitHub",
+        "name3": "✅GitHub",
         "href3": "https://github.com/microsoft",
         "title3": "Microsoft GitHub",
-        "name4": "Power BI",
+        "name4": "✅Power BI",
         "href4": "https://powerbi.microsoft.com",
         "title4": "Microsoft Power BI"
     },
     {
-        "name1": "Office 365",
+        "name1": "✅Office 365",
         "href1": "https://www.office.com",
         "title1": "Microsoft Office 365",
         "name2": "Dynamics 365",
         "href2": "https://dynamics.microsoft.com",
         "title2": "Microsoft Dynamics 365",
-        "name3": "OneDrive",
+        "name3": "✅OneDrive",
         "href3": "https://onedrive.live.com",
         "title3": "Microsoft OneDrive",
         "name4": "SharePoint",
@@ -28,7 +28,7 @@
         "title4": "Microsoft SharePoint"
     },
     {
-        "name1": "Teams",
+        "name1": "✅Teams",
         "href1": "https://teams.microsoft.com",
         "title1": "Microsoft Teams",
         "name2": "Edge",
@@ -37,7 +37,7 @@
         "name3": "Bing",
         "href3": "https://www.bing.com",
         "title3": "Microsoft Bing",
-        "name4": "Outlook",
+        "name4": "✅Outlook",
         "href4": "https://outlook.live.com",
         "title4": "Microsoft Outlook"
     },
@@ -56,15 +56,15 @@
         "title4": "Microsoft AI"
     },
     {
-        "name1": "Azure AI",
+        "name1": "✅Azure AI",
         "href1": "https://azure.microsoft.com/services/cognitive-services/",
         "title1": "Azure Cognitive Services",
-        "name2": "Microsoft Learn",
+        "name2": "✅Microsoft Learn",
         "href2": "https://learn.microsoft.com",
         "title2": "Microsoft Learn",
-        "name3": "Azure Functions",
+        "name3": "✅Azure Functions",
         "href3": "https://azure.microsoft.com/services/functions/",
-        "title3": "Azure Functions",
+        "title3": "✅Azure Functions",
         "name4": "Azure Logic Apps",
         "href4": "https://azure.microsoft.com/services/logic-apps/",
         "title4": "Azure Logic Apps"

@@ -1,20 +1,28 @@
 {
    "title1": "communicate",
    "href1": "https://www.youtube.com/@allin",
-   "href2": "*/p1",
+   "href2": "*/settings",
    "links": [
       {
-         "pre1": " microsoft 365ㅤ",
-         "name1": "work",
-         "href1": "https://www.office.com/?auth=2",
-         "post1": "|",
-         "name2": "home",
-         "href2": "https://www.office.com/?auth=1"
+         "pre1":" ",
+         "name1": "microsoft 365",
+         "href1": "https://www.microsoft.com/en-us/microsoft-365",
+         "post1": "ㅤ",
+
+         "name2": "work",
+         "href2": "https://www.office.com/?auth=2",
+         "post2": "|",
+         "name3": "home",
+         "href3": "https://www.office.com/?auth=1"
       },
       {
-         "pre1": " google officeㅤ",
-         "name1": "gmail",
-         "href1": "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox",
+         "pre1": " ",
+         "name1": "google office",
+         "href1": "https://admin.google.com/?authuser=1",
+         "post1": "ㅤ",
+
+         "name2": "gmail",
+         "href2": "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox",
          "pre3": "|",
          "name3": "dashboard",
          "href3": "https://workspace.google.com/u/1/dashboard"

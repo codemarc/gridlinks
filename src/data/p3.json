@@ -1,7 +1,7 @@
 {
    "title1": "genai platforms/tools",
    "href1": "p3",
-   "href2": "*/p3",
+   "href2": "*/settings",
    "links":[
       {
          "name1": "chatgpt",
@@ -21,17 +21,18 @@
          "title4": "Perplexity AI Search"
       },
       {
+         "pre1": "    ",
          "name1": "meta.ai",
          "href1": "https://www.meta.ai/",
          "title1": "Meta's AI Research",
 
-         "name2": "x.ai",
-         "href2": "https://x.ai/",
-         "title2": "x.ai",
+         "name3": "x.ai",
+         "href3": "https://x.ai/",
+         "title3": "x.ai",
 
-         "name3": "hugging face",
-         "href3": "https://huggingface.co/",
-         "title3": "Hugging Face AI Community"
+         "name2": "hugging face",
+         "href2": "https://huggingface.co/",
+         "title2": "Hugging Face AI Community"
       },
       {
          "name1": "-art / image"
