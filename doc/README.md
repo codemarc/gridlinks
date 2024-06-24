@@ -1,22 +1,24 @@
- <a id="top"/>
- <p align="center">
-  <a href="https://codemarc.net">
-    <picture></picture><br/><br/>
-     <a aria-label="gridlinks logo" href="https://codemarc.net">
-        <img src="https://img.shields.io/badge/g r i d l i n k s -blue?style=for-the-badge">
-  </a>
-    <font size="3">
-        <br/><a href="https://codemarc.net">a chrome extension by codemarc</a>
-        <br/><a aria-label="License" href="https://github.com/codemarc/gridlinks/blob/main/LICENSE">MIT License
-  </a>
-    </font>
-    </h1>
-  </a>
-</p>
+<a id="top"/>
+<a href="https://codemarc.net">
+   <br/>
+   <a aria-label="gridlinks logo" href="https://codemarc.net/doc/gridlinks">
+      <img src="https://img.shields.io/badge/g r i d l i n k s -blue?style=for-the-badge">
+   </a>
+   <font size="3">
+      <br/><a href="https://codemarc.net">a chrome extension by codemarc</a>
+      <br/>
+   </font>
+</a>
 
 
-[Documentation](./doc/README.md) for this [project] is located in the [docs] folder and using [docsify] we created the [gridlinks][docsite] docsite, deployed at [codemarc.net/doc/gridlinks][docsite].
+![GitHub License](https://img.shields.io/github/license/codemarc/gridlinks?link=https%3A%2F%2Fgithub.com%2Fcodemarc%2Fgridlinks%2Fblob%2Fmain%2FLICENSE)
+![Chrome Web Store Version](https://img.shields.io/chrome-web-store/v/ofpobifnipafncfehmgeknfkgojkbgke?color=blue&link=https%3A%2F%2Fchromewebstore.google.com%2Fdetail%2Fgridlinks%2Fofpobifnipafncfehmgeknfkgojkbgke)
+![GitHub last commit](https://img.shields.io/github/last-commit/codemarc/gridlinks)
 
+
+[Documentation](./doc/README.md) for this [project] is located in the   [docs] folder and using [docsify] we created the [gridlinks][docsite]   docsite, deployed at [codemarc.net/doc/gridlinks][docsite]. *You can install the latest version from the [chrome-web-store]*.
+
+---
 
 ## Introduction
 
@@ -273,3 +275,4 @@ Then connect to http://localhost:3000
 [Vite]:https://en.wikipedia.org/wiki/Vite_(software)
 [Chrome extensions]: https://developer.chrome.com/docs/extensions/mv3/
 [CRXJS Vite Plugin]: https://crxjs.dev/vite-plugin
+[chrome-web-store]: https://chromewebstore.google.com/detail/gridlinks/ofpobifnipafncfehmgeknfkgojkbgke
