@@ -32,6 +32,13 @@ Here's an example wireframe for a Chrome extension popup:
 
 <img src="img/gridlinks-frame1.png" width="50%" vspace="20">
 
+## Data Model
+
+#### TODO:
+1. considerations
+2. data schema
+3. workflow
+
 
 ## Re-form
 ![GitHub Tag](https://img.shields.io/badge/tag-STEP2-blue)
