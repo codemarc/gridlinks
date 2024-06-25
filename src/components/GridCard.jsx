@@ -5,8 +5,7 @@ import { Card, CardHeader, CardContent, CardActionArea } from "@mui/material"
 import { Link, Divider, Button } from "@mui/material"
 import GridItem from "./GridItem"
 
-//const basecolor = "#1b2051"
-const basecolor = "#2185de"
+const basecolor = "#1b2051"
 
 export default function GridCard({ dto }) {
    const navigate = useNavigate()
@@ -18,12 +17,12 @@ export default function GridCard({ dto }) {
         <Link title={dto.tootip1 ?? dto.href1} href={dto.href1} target={dto.target1 ?? "_blank"} sx={{
          fontSize: "9.5pt",
          fontWeight: 500,
-         color: theme.palette.mode === "dark" ? "rgb(162,239,169)" : "#1b2051",
+         color: theme.palette.mode === "dark" ? "lightblue" : "seagreen",
          textDecoration: "none",
          textShadow: "none",
          "&:hover": {
-           color: theme.palette.mode === "dark" ? "rgb(76,249,77)" : "green",
-           backgroundColor: theme.palette.mode === "dark" ? "rgba(128,128,128,0.5)" : "rgba(128,128,128,0.5)",
+           color: theme.palette.mode === "dark" ? "rgb(76,249,77)" : "white",
+           backgroundColor: theme.palette.mode === "dark" ? "#777" : "green",
            fontWeight: "bold",
            textDecoration: "none",
            cursor: "pointer"
@@ -37,7 +36,7 @@ export default function GridCard({ dto }) {
     const getSubTitle = () => {
       const subtitle = dto.title2 ?? " ⛭ "
       const style = {
-         color: theme.palette.mode === "dark" ? "lightgreen" : basecolor,
+         color: theme.palette.mode === "dark" ? "lightblue" : "seagreen",
          float: "right",
          minWidth: "12px",
          lineHeight: "0.5",
@@ -49,7 +48,8 @@ export default function GridCard({ dto }) {
          "&:hover": {
            outline: "none",
            textDecoration: "none",
-           color: theme.palette.mode === "dark" ? "lightgreen" : "green",
+           color: theme.palette.mode === "dark" ? "rgb(76,249,77)" : "white",
+           backgroundColor: theme.palette.mode === "dark" ? "#777" : "green",
            cursor: "pointer"
          }
        }
@@ -66,7 +66,7 @@ export default function GridCard({ dto }) {
     }
 
    return (
-      <Card sx={{maxHeight:"168px"}}>
+      <Card sx={{maxHeight:"168px", border: theme.palette.mode === "dark" ? "1px solid #555" : "none",}}>
          <CardHeader title={getTitle()} subheader={getSubTitle()} sx={{padding: "6px",height: "22px"}} />
          <Divider sx={{ marginTop: "2px", marginBottom: "3px" }} />
          <CardContent sx={{padding:"2px",lineHeight:"1.0"}}>
