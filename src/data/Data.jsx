@@ -1,5 +1,5 @@
-import p1 from "./p1.json"
-import p2 from "./p2.json"
+import p1 from "./p1.yaml"
+import p2 from "./p2.yaml"
 import p3 from "./p3.json"
 import p4 from "./p4.json"
 import p5 from "./p5.json"

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
+import ViteYaml from '@modyfi/vite-plugin-yaml'
 
 // https://crxjs.dev/vite-plugin
 import { crx } from "@crxjs/vite-plugin"
@@ -20,7 +21,7 @@ manifest.version_name = version
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), crx({ manifest })],
+  plugins: [react(),  ViteYaml(), crx({ manifest })],
   server: {
     port: 3000
   },
