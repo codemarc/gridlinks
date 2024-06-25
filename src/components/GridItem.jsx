@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import { useTheme } from "@mui/material/styles"
 import { Link, Divider,Stack } from "@mui/material"
 import { styled } from '@mui/material/styles';
+import { green } from "@mui/material/colors";
 
 const Div = styled('div')(({ theme }) => ({
   ...theme.typography.button,
@@ -33,6 +34,9 @@ export default function CardItem({ dto }) {
          cursor: "hand",
       }
    }
+   const blink2 = {
+      color: theme.palette.mode === "dark" ? "lightblue" : "green"
+   }
 
  const showRows = (o, idx) => {
   return (
@@ -54,7 +58,7 @@ export default function CardItem({ dto }) {
          ㅤㅤㅤㅤ</Divider></>) :
           (
             <>
-              <Div>{o.pre1}</Div>
+              {o.pre1!==undefined && o.pre1.startsWith("~") ? (<Div sx={blink2}>{ o.pre1.substring(1) }</Div>) : (<Div>{ o.pre1 }</Div>)}
               <Link sx={blink} key={idx} href={o.href1} target={o.target1 ?? "_blank"} title={o.title1 ?? o.href1}>
                 {o.name1}
               </Link>
