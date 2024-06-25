@@ -6,7 +6,16 @@
       {
          "name1": "learn",
          "href1": "https://learn.microsoft.com",
-         "title1": "Microsoft Learn (this is what was once msdn, then docs and then learn)"
+         "title1": "Microsoft Learn (this is what was once msdn, then docs and then learn)",
+
+         "name2": "copilot",
+         "href2": "https://copilot.microsoft.com",
+         "title2": "Microsoft Copilot is a service designed to enhance productivity and assist users in various tasks. It leverages artificial intelligence to provide guidance, suggestions, and automation capabilities across different Microsoft platforms and services. Copilot can help with coding, documentation, data analysis, and more, aiming to streamline workflows and make technology more accessible and efficient for users. Its integration into Microsoft's ecosystem allows it to offer tailored assistance based on the context of the user's work, whether it be in software development with GitHub Copilot, document creation in Microsoft 365, or data analysis in Power BI",
+
+         "name3": "bing",
+         "href3": "https://www.bing.com/",
+         "title3": "Microsoft Bing"
+
       },
       {
          "name1": "power platform",

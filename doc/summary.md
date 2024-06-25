@@ -11,4 +11,6 @@
     - [Iconbar](components#iconbar)
     - [Message of the Day](components#message-of-the-day)
   - [Pages](pages#pages)
+    - [Home](pages#home)
+    - [Settings](pages#settings)
 * [Publish](publish)

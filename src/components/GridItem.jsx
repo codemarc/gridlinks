@@ -25,10 +25,10 @@ export default function CardItem({ dto }) {
       fontFamily: "mukta",
       fontSize: "8.5pt",
       fontWeight: 500,
-      color: theme.palette.mode === "dark" ? "rgb(162,239,169)" : dto.basecolor,
+      color: theme.palette.mode === "dark" ? "white" : dto.basecolor,
       "&:hover": {
-         color: theme.palette.mode === "dark" ? "rgb(76,249,77)" : "green",
-         backgroundColor: theme.palette.mode === "dark" ? "rgba(128,128,128,0.5)" : "rgba(128,128,128,0.5)",
+         color: theme.palette.mode === "dark" ? "rgb(76,249,77)" : "white",
+         backgroundColor: theme.palette.mode === "dark" ? "rgba(128,128,128,0.5)" : "green",
          textDecoration: "none",
          cursor: "hand",
       }
@@ -36,7 +36,7 @@ export default function CardItem({ dto }) {
 
  const showRows = (o, idx) => {
   return (
-    <Stack direction="row" alignItems="left" key={idx} sx={{ width: "100%" }}>
+    <Stack direction="row" alignItems="left" key={idx} sx={{ textAlign: "left",width: "100%" }}>
       {itHas(o, "label") && o.label.startsWith("-" ) ? (
         <Divider key={idx} sx={{ fontSize: "8.5pt", marginTop: "3px", marginBottom: "3px",height:"1px", backgroundColor:"#ccc" }}>
          ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</Divider>
