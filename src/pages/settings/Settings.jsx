@@ -75,7 +75,7 @@ export default function Settings({themeProps}) {
     return (
       <Box sx={box1}>
          <Container sx={{ margin: "18px 22px 18px 22px" }}>
-            <div>Settings - Gridlinks </div>
+            <div>Settings - <a href="https://chrome.google.com/webstore/developer/dashboard">Gridlinks</a></div>
          </Container>
          <form onSubmit={handleUpdate}>
 

@@ -22,6 +22,11 @@ links:
     name3: dashboard
     href3: https://workspace.google.com/u/1/dashboard
 
+  - pre1: ㅤ
+    name1: OneDrive
+    href1: https://onedrive.live.com
+
+
   - label: "-"
 
   - pre1: ㅤ
@@ -55,6 +60,23 @@ links:
     href4: https://monday.com/
     title4: "Monday.com: Work OS"
 
+  - label: "-"
+
+  - pre1: ㅤㅤ
+    name1: reddit
+    href1: https://www.reddit.com/
+    post1: ㅤ
+
+    name2: substack
+    href2: https://substack.com/home
+    post2: ㅤ
+
+    name3: notion
+    href3: https://www.notion.so
+    title3: Notion.so is a popular productivity tool that can be described as an all-in-one workspace. It lets you take notes, create documents, manage tasks, and even build wikis and databases – all in a single platform.
+
+
+cloak:
   - pre1: ㅤ
     name1: yammer
     href1: https://www.yammer.com/

@@ -1,5 +1,9 @@
 # gridlinks
 
+Changes for version 0.0.9
+- allow yaml as a data format
+- added gridlinks json schema for data
+
 Changes for version 0.0.8
 - added some new links and updated colors
 - added package.js, package dir chrome web store

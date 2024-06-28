@@ -35,6 +35,24 @@ import { Settings, P1, P2, P3, P4, P5, P6, P7, P8 } from "./pages/Settings"
 import packageJson from "../package.json"
 const { name, version } = packageJson
 
+const defaultSettings = {
+   version: version,
+   dm: false,
+   header: {
+      gh: "https://github.com",
+      li: "https://linkedin.com",
+      tw: "https://twitter.com",
+      ig: "https://instagram.com",
+      fb: "https://facebook.com",
+      ic: "https://icloud.com",
+      ib: "https://outlook.office.com/mail/",
+      ca: "https://outlook.office.com/calendar/view/month",
+      go: "https://www.google.com/travel/flights",
+      sm: "https://client.schwab.com/app/accounts/positions/#/",
+      ai: "https://chatgpt.com/",
+   }
+}
+
 /**
  * The main App component of the application. It sets up the routing, theme, and global state management for the application.
  *
@@ -48,27 +66,26 @@ const { name, version } = packageJson
 export default function App() {
    let stor = localStorage.getItem(name)
    if (stor === null || stor === undefined) {
-      stor = JSON.stringify({
-         version: version,
-         dm: false,
-         header: {
-            gh: "https://github.com",
-            li: "https://linkedin.com",
-            tw: "https://twitter.com",
-            ig: "https://instagram.com",
-            fb: "https://facebook.com",
-            ic: "https://icloud.com",
-            ib: "https://outlook.office.com/mail/",
-            ca: "https://outlook.office.com/calendar/view/month",
-            go: "https://www.google.com/travel/flights",
-            sm: "https://client.schwab.com/app/accounts/positions/#/",
-            ai: "https://chatgpt.com/",
-         },
-      })
+      stor = JSON.stringify(defaultSettings)
       localStorage.setItem(name, stor)
    }
-
    const ls = JSON.parse(stor)
+
+   if(ls.version !== version){
+      if(confirm("There is a new version of the app available. Would you like to update your settings?")){
+         localStorage.setItem(name, JSON.stringify(defaultSettings))
+         window.location.reload()
+      } else {
+         ls.version = version
+         localStorage.setItem(name, JSON.stringify(ls))
+      }
+   }
+
+
+
+
+
+
    const [darkMode, setDarkMode] = useState(ls.dm ?? false)
 
    useEffect(() => {

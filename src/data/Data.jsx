@@ -1,11 +1,11 @@
 import p1 from "./p1.yaml"
 import p2 from "./p2.yaml"
-import p3 from "./p3.json"
-import p4 from "./p4.json"
+import p3 from "./p3.yaml"
+import p4 from "./p4.yaml"
 import p5 from "./p5.yaml"
 import p6 from "./p6.yaml"
 import p7 from "./p7.yaml"
-import p8 from "./p8.json"
+import p8 from "./p8.yaml"
 
 const pdata = {
    p1: p1,
