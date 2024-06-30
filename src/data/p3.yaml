@@ -27,7 +27,7 @@ links:
     href2: https://huggingface.co/
     title2: Hugging Face AI Community
 
-  - name1: "-art / image"
+  - name1: "-art/image"
 
   - pre1: " "
     name1: dall-e

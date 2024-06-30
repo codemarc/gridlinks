@@ -1,8 +1,7 @@
 import PropTypes from "prop-types"
 import { useTheme } from "@mui/material/styles"
-import { Link, Divider,Stack } from "@mui/material"
-import { styled } from '@mui/material/styles';
-import { green } from "@mui/material/colors";
+import { Link, Divider,Stack,Tooltip } from "@mui/material"
+import { styled } from '@mui/material/styles'
 
 const Div = styled('div')(({ theme }) => ({
   ...theme.typography.button,
@@ -39,6 +38,22 @@ export default function CardItem({ dto }) {
    }
 
  const showRows = (o, idx) => {
+
+   const showCol = (ndx, pre, post, title, href, target, name) => {
+      return (
+         <>
+            <Div>{pre}</Div>
+            <Tooltip title={title ?? href} arrow>
+               <Link sx={blink} key={ndx} href={href} target={target ?? "_blank"} title={title ?? href} >
+                  {name}
+               </Link>
+            </Tooltip>
+            <Div>{post}</Div>
+         </>
+      )
+   }
+
+
   return (
     <Stack direction="row" alignItems="left" key={idx} sx={{ textAlign: "left",width: "100%" }}>
       {itHas(o, "label") && o.label.startsWith("-" ) ? (
@@ -47,56 +62,34 @@ export default function CardItem({ dto }) {
       ) : (
         <>
           {itHas(o, "name1") &&
-            o.name1.startsWith("-") ? ( <>
-               <Divider key={idx} sx={{ fontSize: "8.5pt", marginTop: "8px", marginBottom: "1px",height:"1px", backgroundColor:"#ccc" }}>
-         ㅤㅤㅤㅤ</Divider>
-         <Link sx={{...blink,paddingTop:"8px",lineHeight:"0.25"}} key={idx + "2"} href={o.href1} target={o.target1 ?? "_blank"} title={o.title1 ?? o.href1}>
-               ㅤ{o.name1.substring(1)}ㅤ
-              </Link>
+            o.name1.startsWith("-") ? (
+            <>
+            <Divider key={idx} sx={{ fontSize: "8.5pt", marginTop: "8px", marginBottom: "3px",height:"1px", backgroundColor:"#ccc" }}> ㅤㅤㅤㅤ</Divider>
+            <Tooltip title={o.title1 ?? o.href1} >
+            <Link sx={{...blink, padding:"8px",lineHeight:"0.1"}} key={idx + "2"} href={o.href1} target={o.target1 ?? "_blank"} title={o.title1 ?? o.href1}>
+                  ㅤ{o.name1.substring(1)}ㅤ
+            </Link>
+            </Tooltip>
 
-               <Divider key={idx} sx={{ fontSize: "8.5pt", marginTop: "8px", marginBottom: "1px",height:"1px", backgroundColor:"#ccc" }}>
-         ㅤㅤㅤㅤ</Divider></>) :
-          (
+            <Divider key={idx} sx={{ fontSize: "8.5pt", marginTop: "8px", marginBottom: "1px",height:"1px", backgroundColor:"#ccc" }}> ㅤㅤㅤㅤ</Divider></>) : (
             <>
               {o.pre1!==undefined && o.pre1.startsWith("~") ? (<Div sx={blink2}>{ o.pre1.substring(1) }</Div>) : (<Div>{ o.pre1 }</Div>)}
+              <Tooltip title={o.title1 ?? o.href1} arrow>
               <Link sx={blink} key={idx} href={o.href1} target={o.target1 ?? "_blank"} title={o.title1 ?? o.href1}>
                 {o.name1}
               </Link>
+              </Tooltip>
               <Div>{o.post1}</Div>
             </>
           )}
-          {itHas(o, "name2") && (
-            <>
-              <Div>{o.pre2}</Div>
-              <Link sx={blink} key={idx + "2"} href={o.href2} target={o.target2 ?? "_blank"} title={o.title2 ?? o.href2}>
-                {o.name2}
-              </Link>
-              <Div>{o.post2}</Div>
-            </>
-          )}
-          {itHas(o, "name3") && (
-            <>
-              <Div>{o.pre3}</Div>
-              <Link sx={blink} key={idx + "3"} href={o.href3} target={o.target3 ?? "_blank"} title={o.title3 ?? o.href3}>
-                {o.name3}
-              </Link>
-              <Div>{o.post3}</Div>
-            </>
-          )}
-          {itHas(o, "name4") && (
-            <>
-              <Div>{o.pre4}</Div>
-              <Link sx={blink} key={idx + "4"} href={o.href4} target={o.target4 ?? "_blank"} title={o.title4 ?? o.href4}>
-                {o.name4}
-              </Link>
-              <Div>{o.post4}</Div>
-            </>
-          )}
+          {itHas(o, "name2") && showCol(idx+"2", o.pre2, o.post2, o.title2, o.href2, o.target2, o.name2)}
+          {itHas(o, "name3") && showCol(idx+"3", o.pre3, o.post3, o.title3, o.href3, o.target3, o.name3)}
+          {itHas(o, "name4") && showCol(idx+"4", o.pre4, o.post4, o.title4, o.href4, o.target4, o.name4)}
         </>
       )}
     </Stack>
-  );
-};
+  )
+}
    return (
    <>
    {itHas(dto,"links") && dto.links.map((o,idx) => ( showRows(o,idx)))}

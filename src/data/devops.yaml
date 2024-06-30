@@ -1,0 +1,79 @@
+title1: devops toolchain
+href1: https://www.cncf.io/
+href2: "*/settings"
+links:
+  - pre1:  
+    name1: rancher
+    href1: https://rancher.com/
+    name2: docker
+    href2: https://www.docker.com/
+    name3: kubernetes
+    href3: https://kubernetes.io/
+    name4: helm
+    href4: https://helm.sh/
+
+  - pre1:  
+    name1: datadog
+    href1: https://www.datadoghq.com/
+    name2: prometheus
+    href2: https://prometheus.io/
+    name3: grafana
+    href3: https://grafana.com/
+    name4: elk
+    href4: https://www.elastic.co/elastic-stack
+
+
+  - name1: pulumi
+    href1: https://www.pulumi.com/
+    name2: serverless
+    href2: https://www.serverless.com/
+    name3: terraform
+    href3: https://www.terraform.io/
+    name4: ansible
+    href5: https://www.ansible.com/
+
+
+  - name1: istio
+    href1: https://istio.io/
+    name2: linkerd
+    href2: https://linkerd.io/
+    name3: consul
+    href3: https://www.consul.io/
+    name4: envoy
+    href4: https://www.envoyproxy.io/
+
+
+  - name1:  
+  - name1: Jenkins
+    href1: https://www.jenkins.io/
+    name2: GitLab CI
+    href2: https://docs.gitlab.com/ee/ci/
+    name3: CircleCI
+    href3: https://circleci.com/
+    name4: Travis CI
+    href4: https://travis-ci.org/
+
+  - name1: Terraform
+    href1: https://www.terraform.io/
+    name2: Ansible
+    href2: https://www.ansible.com/
+    name3: Puppet
+    href3: https://puppet.com/
+    name4: Chef
+    href4: https://www.chef.io/
+
+  - name1: RabbitMQ
+    href1: https://www.rabbitmq.com/
+    name4: ZeroMQ
+    href4: https://zeromq.org/
+
+
+
+
+
+  - name2: OpenShift
+    href2: https://www.openshift.com/
+    name3: Nomad
+    href3: https://www.nomadproject.io/
+    name4: Mesos
+    href4: https://mesos.apache.org/
