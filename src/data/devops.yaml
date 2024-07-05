@@ -3,12 +3,12 @@ href1: https://www.cncf.io/
 href2: "*/settings"
 links:
   - pre1:  
-    name1: rancher
-    href1: https://rancher.com/
-    name2: docker
-    href2: https://www.docker.com/
-    name3: kubernetes
-    href3: https://kubernetes.io/
+    name1: docker
+    href1: https://www.docker.com/
+    name2: kubernetes
+    href2: https://kubernetes.io/
+    name3: k3s
+    href3: https://k3s.io/
     name4: helm
     href4: https://helm.sh/
 
@@ -22,7 +22,6 @@ links:
     name4: elk
     href4: https://www.elastic.co/elastic-stack
 
-
   - name1: pulumi
     href1: https://www.pulumi.com/
     name2: serverless
@@ -33,7 +32,8 @@ links:
     href5: https://www.ansible.com/
 
 
-  - name1: istio
+  - pre1:  ㅤㅤ
+    name1: istio
     href1: https://istio.io/
     name2: linkerd
     href2: https://linkerd.io/
@@ -42,38 +42,36 @@ links:
     name4: envoy
     href4: https://www.envoyproxy.io/
 
-
-  - name1:  
-  - name1: Jenkins
-    href1: https://www.jenkins.io/
-    name2: GitLab CI
-    href2: https://docs.gitlab.com/ee/ci/
-    name3: CircleCI
-    href3: https://circleci.com/
-    name4: Travis CI
-    href4: https://travis-ci.org/
-
-  - name1: Terraform
+  - pre1:  ㅤ
+    name1: terraform
     href1: https://www.terraform.io/
-    name2: Ansible
+    name2: ansible
     href2: https://www.ansible.com/
-    name3: Puppet
+    name3: puppet
     href3: https://puppet.com/
-    name4: Chef
+    name4: chef
     href4: https://www.chef.io/
 
-  - name1: RabbitMQ
-    href1: https://www.rabbitmq.com/
-    name4: ZeroMQ
-    href4: https://zeromq.org/
+  - pre1:  ㅤ
+    name1: jenkins
+    href1: https://www.jenkins.io/
+    name2: gitLab ci
+    href2: https://docs.gitlab.com/ee/ci/
+    name3: circle ci
+    href3: https://circleci.com/
+    name4: travis ci
+    href4: https://travis-ci.org/
 
+  - pre1:  ㅤ
+    name1: rancher
+    href1: https://rancher.com/
 
-
-
-
-  - name2: OpenShift
+    name2: openshift
     href2: https://www.openshift.com/
-    name3: Nomad
+    title2: Red Hat OpenShift is a container application platform that allows developers and IT organizations to build, deploy, and manage applications consistently across on-premises, public, and private cloud infrastructures. It is based on open-source Kubernetes container orchestration technology and provides a comprehensive set of tools and services for developing, deploying, and managing containerized applications.
+
+    name3: nomad
     href3: https://www.nomadproject.io/
-    name4: Mesos
-    href4: https://mesos.apache.org/
+    title3: A simple and flexible scheduler and orchestrator to deploy and manage containers and non-containerized applications across on-premises and clouds at scale.
+
+  - pre1: ㅤ
