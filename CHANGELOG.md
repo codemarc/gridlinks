@@ -1,5 +1,10 @@
 # gridlinks
 
+Changes for version 0.0.10
+- spacing adjustments
+- cleaned the datalinks
+
+
 Changes for version 0.0.9
 - added better tooltip rendering
 - added apache section

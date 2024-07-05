@@ -17,5 +17,7 @@
 
 [Documentation](./doc/README.md) for this project is located in the docs folder and using [docsify] we created the [gridlinks][docsite] docsite, deployed at [codemarc.net/doc/gridlinks][docsite].
 
+![](doc/img/snapshot1.png)
+
 [docsite]: https://codemarc.net/doc/gridlinks
 [docsify]: "https://docsify.js.org/#/"

@@ -66,13 +66,13 @@ export default function GridCard({ dto }) {
     }
 
    return (
-      <Card sx={{maxHeight:"168px", border: theme.palette.mode === "dark" ? "1px solid #555" : "none",}}>
+      <Card sx={{boxShadow:"0px 2px 1px -2px", marginTop:"4px",marginBottom:"2px",maxHeight:"168px", border: theme.palette.mode === "dark" ? "1px solid #555" : "none",}}>
          <CardHeader title={getTitle()} subheader={getSubTitle()} sx={{padding: "6px",height: "22px"}} />
          <Divider sx={{ marginTop: "2px", marginBottom: "3px" }} />
          <CardContent sx={{padding:"2px",lineHeight:"1.0"}}>
             <GridItem dto={dto} />
          </CardContent>
-         {/* <CardActionArea/> */}
+         <CardActionArea/>
       </Card>
    )
 }

@@ -39,12 +39,12 @@ export default function CardItem({ dto }) {
 
  const showRows = (o, idx) => {
 
-   const showCol = (ndx, pre, post, title, href, target, name) => {
+   const showCol = (pre, post, title, href, target, name) => {
       return (
          <>
             <Div>{pre}</Div>
             <Tooltip title={title ?? href} arrow>
-               <Link sx={blink} key={ndx} href={href} target={target ?? "_blank"} title={title ?? href} >
+               <Link sx={blink} href={href} target={target ?? "_blank"} >
                   {name}
                </Link>
             </Tooltip>
@@ -55,9 +55,9 @@ export default function CardItem({ dto }) {
 
 
   return (
-    <Stack direction="row" alignItems="left" key={idx} sx={{ textAlign: "left",width: "100%" }}>
+    <Stack direction="row" alignItems="left" key={idx} sx={{ textAlign: "left",width: "100%",marginTop:"-1px" }}>
       {itHas(o, "label") && o.label.startsWith("-" ) ? (
-        <Divider key={idx} sx={{ fontSize: "8.5pt", marginTop: "3px", marginBottom: "3px",height:"1px", backgroundColor:"#ccc" }}>
+        <Divider sx={{ fontSize: "8.5pt", marginTop: "3px", marginBottom: "3px",height:"1px", backgroundColor:"#ccc" }}>
          ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</Divider>
       ) : (
         <>
@@ -66,25 +66,25 @@ export default function CardItem({ dto }) {
             <>
             <Divider key={idx} sx={{ fontSize: "8.5pt", marginTop: "8px", marginBottom: "3px",height:"1px", backgroundColor:"#ccc" }}> ㅤㅤㅤㅤ</Divider>
             <Tooltip title={o.title1 ?? o.href1} >
-            <Link sx={{...blink, padding:"8px",lineHeight:"0.1"}} key={idx + "2"} href={o.href1} target={o.target1 ?? "_blank"} title={o.title1 ?? o.href1}>
+            <Link sx={{...blink, padding:"8px",lineHeight:"0.1"}} key={idx + "2"} href={o.href1} target={o.target1 ?? "_blank"} >
                   ㅤ{o.name1.substring(1)}ㅤ
             </Link>
             </Tooltip>
 
-            <Divider key={idx} sx={{ fontSize: "8.5pt", marginTop: "8px", marginBottom: "1px",height:"1px", backgroundColor:"#ccc" }}> ㅤㅤㅤㅤ</Divider></>) : (
+            <Divider sx={{ fontSize: "8.5pt", marginTop: "8px", marginBottom: "1px",height:"1px", backgroundColor:"#ccc" }}> ㅤㅤㅤㅤ</Divider></>) : (
             <>
               {o.pre1!==undefined && o.pre1.startsWith("~") ? (<Div sx={blink2}>{ o.pre1.substring(1) }</Div>) : (<Div>{ o.pre1 }</Div>)}
               <Tooltip title={o.title1 ?? o.href1} arrow>
-              <Link sx={blink} key={idx} href={o.href1} target={o.target1 ?? "_blank"} title={o.title1 ?? o.href1}>
+              <Link sx={blink} href={o.href1} target={o.target1 ?? "_blank"} >
                 {o.name1}
               </Link>
               </Tooltip>
               <Div>{o.post1}</Div>
             </>
           )}
-          {itHas(o, "name2") && showCol(idx+"2", o.pre2, o.post2, o.title2, o.href2, o.target2, o.name2)}
-          {itHas(o, "name3") && showCol(idx+"3", o.pre3, o.post3, o.title3, o.href3, o.target3, o.name3)}
-          {itHas(o, "name4") && showCol(idx+"4", o.pre4, o.post4, o.title4, o.href4, o.target4, o.name4)}
+          {itHas(o, "name2") && showCol(o.pre2, o.post2, o.title2, o.href2, o.target2, o.name2)}
+          {itHas(o, "name3") && showCol(o.pre3, o.post3, o.title3, o.href3, o.target3, o.name3)}
+          {itHas(o, "name4") && showCol(o.pre4, o.post4, o.title4, o.href4, o.target4, o.name4)}
         </>
       )}
     </Stack>

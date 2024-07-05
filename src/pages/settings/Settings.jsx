@@ -1,11 +1,26 @@
 import PropTypes from "prop-types"
 import { useState, useEffect } from 'react'
 import { useNavigate, useLocation } from "react-router-dom"
-import { Box, Container, Grid } from "@mui/material"
+import { Box, Container, Grid, Link } from "@mui/material"
 import { TextField, Button, Switch } from "@mui/material"
+import { styled } from '@mui/material/styles'
+
+
 
 export default function Settings({themeProps}) {
    const { name, ls, darkMode, setDarkMode } = themeProps
+
+   const lcolor = (darkMode) ? "lightblue" : "#1b2051"
+
+   const Div = styled('div')(({ theme }) => ({
+      ...theme.typography.button,
+      textTransform: 'none',
+      marginTop: "-1px",
+      color: lcolor,
+      fontSize: "14pt",
+   }))
+
+
    const {gh,li,tw,ig,fb,ic,ib,ca,go,sm,ai} = ls.header
 
    const [githubUrl, setGithubUrl] = useState(gh ?? '')
@@ -75,7 +90,7 @@ export default function Settings({themeProps}) {
     return (
       <Box sx={box1}>
          <Container sx={{ margin: "18px 22px 18px 22px" }}>
-            <div>Settings - <a href="https://chrome.google.com/webstore/developer/dashboard">Gridlinks</a></div>
+            <Div>Settings - <Link sx={{textShadow:"none", textDecoration:"none", color:lcolor,'&:hover':{color:lcolor} }} href="https://chrome.google.com/webstore/developer/dashboard">Gridlinks</Link></Div>
          </Container>
          <form onSubmit={handleUpdate}>
 
