@@ -15,3 +15,8 @@
     - [Home](pages#home)
     - [Settings](pages#settings)
 * [Publish](publish)
+  - [Register](publish#register)
+  - [Prepare](publish#prepare)
+  - [Upload](publish#upload)
+  - [Submit](publish#submit)
+  - [Wait](publish#wait)

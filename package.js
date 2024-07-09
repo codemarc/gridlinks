@@ -28,17 +28,17 @@ import process from 'process'
       console.log(`archive created: ${DEFZIP}`)
    } else {
       if(args[0] === 'patch') {
-         const nargs='npx ncu -u -t patch'
+         const nargs='ncu -u -t patch'
          console.log(nargs)
          console.log(await exec(nargs).stdout)
 
       } else if(args[0] === 'minor') {
-         const nargs='npx ncu -u -t minor'
+         const nargs='ncu -u -t minor'
          console.log(nargs)
          console.log(await exec(nargs).stdout)
 
       } else if(args[0] === '-v') {
-         const nargs='npx ncu'
+         const nargs='ncu'
          console.log(nargs)
          console.log(await exec(nargs).stdout)
 
