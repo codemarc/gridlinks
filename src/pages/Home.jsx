@@ -62,7 +62,7 @@ export default function Home() {
    return (
       <>
          <Motd />
-         <Box sx={{ flexGrow: 1, p: 1, marginTop: "-2px", maxWidth: "900px" }}>
+         <Box sx={{ flexGrow: 1, padding: "4px", marginTop: "-2px", maxWidth: "900px" }}>
             <Grid container spacing={0}>
                {keys.map((o, ndx) => (
                   <Grid item xs={3} key={ndx}>
