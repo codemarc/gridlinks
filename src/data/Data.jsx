@@ -4,8 +4,8 @@ import p3 from "./p3.yaml"
 import p4 from "./devops.yaml"
 import p5 from "./p5.yaml"
 import p6 from "./amazon.yaml"
-import p7 from "./p7.yaml"
-import p8 from "./apache.yaml"
+import p7 from "./apache.yaml"
+import p8 from "./shopify.yaml"
 
 const pdata = {
    p1: p1,

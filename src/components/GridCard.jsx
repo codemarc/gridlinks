@@ -39,6 +39,7 @@ export default function GridCard({ dto }) {
          color: theme.palette.mode === "dark" ? "lightblue" : "seagreen",
          float: "right",
          minWidth: "12px",
+         fontSize: "9.5pt",
          lineHeight: "0.5",
          marginTop: "-22px",
          textDecoration: "none",
