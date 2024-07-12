@@ -20,3 +20,7 @@ header {
  #root > div > header > div > div > span > div > button {
    padding: 7px;
  }
+
+ #root > div > div > div > div > button {
+   color:inherit;
+ }

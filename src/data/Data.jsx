@@ -7,7 +7,11 @@ import p6 from "./amazon.yaml"
 import p7 from "./apache.yaml"
 import p8 from "./shopify.yaml"
 
-const pdata = {
+import google from "./google.yaml"
+import apache from "./apache.yaml"
+import shopify from "./shopify.yaml"
+
+const sdata = {
    p1: p1,
    p2: p2,
    p3: p3,
@@ -18,4 +22,8 @@ const pdata = {
    p8: p8
 }
 
-export default pdata
+export default function pdata(ls) {
+   sdata.p7 = ls.gs ? apache : google
+   sdata.p8 = ls.gs ? shopify : apache
+   return sdata
+}

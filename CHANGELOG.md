@@ -1,5 +1,9 @@
 # gridlinks
 
+Changes for version 0.0.11
+- added tabset on the main settings page
+- introduced the idea of a gridset for the grid links
+
 Changes for version 0.0.10
 - added shopify back
 - spacing adjustments

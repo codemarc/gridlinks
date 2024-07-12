@@ -1,4 +1,10 @@
 /**
+ * Imports the `PropTypes` module, which provides a way to validate the props passed to a React component.
+ * This import is likely used throughout the codebase to define the expected prop types for various components.
+ */
+import PropTypes from "prop-types";
+
+/**
  * Imports the `styled` function from the `@mui/material/styles` module.
  * This function is used to create a new React component that applies the specified styles.
  */
@@ -27,13 +33,8 @@ import GridCard from "../components/GridCard"
 /**
  * Imports the default export from the "../data/Data" module, which likely contains some data or configuration that is used throughout the application.
  */
-import { default as data } from "../data/Data"
+import { default as pdata } from "../data/Data"
 
-/**
- * Retrieves the keys of the `data` object, which is likely a data source or configuration object used throughout the application.
- * This allows the component to iterate over the keys and render corresponding `GridCard` components.
- */
-const keys = Object.keys(data)
 
 /**
  * A custom Material-UI `Paper` component that applies specific styles based on the current theme.
@@ -58,7 +59,10 @@ const Item = styled(Paper)(({ theme }) => ({
  * The `GridCard` components are rendered based on the keys of the `data` object, which is likely a data source or configuration object used throughout the application.
  * The `Item` component is a custom Material-UI `Paper` component that applies specific styles based on the current theme, providing a consistent paper-like surface for the `GridCard` components.
  */
-export default function Home() {
+
+export default function Home({ themeProps }) {
+   const data = pdata(themeProps.ls)
+   const keys = Object.keys(data)
    return (
       <>
          <Motd />
@@ -75,4 +79,8 @@ export default function Home() {
          </Box>
       </>
    )
+}
+
+Home.propTypes = {
+   themeProps: PropTypes.object.isRequired
 }
