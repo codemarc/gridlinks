@@ -1,10 +1,16 @@
 {
-    "recommendations": [
-        "editorconfig.editorconfig",
-        "dbaeumer.vscode-eslint",
-        "codebytesfl.ccomment",
-        "github.copilot",
-        "github.copilot-chat",
-        "esbenp.prettier-vscode"
-    ]
+   "recommendations": [
+      "editorconfig.editorconfig",
+      "dbaeumer.vscode-eslint",
+      "codebytesfl.ccomment",
+      "github.copilot-chat",
+      "esbenp.prettier-vscode",
+      "xabikos.javascriptsnippets",
+      "christian-kohler.npm-intellisense",
+      "orta.vscode-jest",
+      "humao.rest-client",
+      "redhat.vscode-yaml",
+      "sourcegraph.cody-ai",
+      "mhutchie.git-graph"
+   ]
 }
