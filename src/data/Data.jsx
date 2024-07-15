@@ -39,8 +39,8 @@ export default function pdata(ls) {
             sdata.p3 = banking;
             sdata.p4 = house;
             sdata.p5 = p3;
-            sdata.p6 = blank;
-            sdata.p7 = blank
+            sdata.p6 = p0;
+            sdata.p7 = p0;
             sdata.p8 = entertain;
             break;
 
