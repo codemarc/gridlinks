@@ -1,0 +1,56 @@
+title1: banking/credit cards
+href2: "*/settings"
+links:
+  - pre1:  
+    post1: ㅤ
+    post2: ㅤ
+    post3: ㅤ
+
+    name1: chase
+    href1: https://chaseonline.chase.com/
+
+    name2: fifththird
+    href2: https://www.53.com/content/fifth-third/en/login.html
+
+    name3: bofa
+    href3: https://www.bankofamerica.com/
+
+    name4: amex
+    href4: https://www.americanexpress.com/en-us/account/login?inav=iNavLnkLog
+
+  - pre1:  
+    post1: ㅤ
+    post2: ㅤ
+    post3: ㅤ
+
+    name1: capone
+    href1: https://myaccounts.capitalone.com/welcome
+
+    name2: discover
+    href2: https://portal.discover.com/customersvcs/universalLogin/ac_main
+
+    name3: citi
+    href3: https://online.citi.com/US/ag/dashboard/credit-card
+
+    name4: apple
+    href4: https://card.apple.com
+
+  - pre1: "~  syncbank ⇒ "
+    post1: ㅤ|ㅤ
+    post2: ㅤ
+    post3: ㅤ
+
+    name1: amazon
+    href1: https://www.synchrony.com/accounts/?client=amazon
+
+    name2: others
+    href2: https://www.synchrony.com/accounts/
+
+  - label: "-"
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+

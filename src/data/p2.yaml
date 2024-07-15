@@ -29,6 +29,13 @@ links:
     name1: roadmap
     href1: https://roadmap.sh/
 
+    name2: bash
+    href2: https://devhints.io/bash
+
+    name3: css
+    href3: https://htmlcheatsheet.com/css/
+
+
   - label: "-"
 
   - name1: postman

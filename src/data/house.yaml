@@ -1,0 +1,55 @@
+title1: household
+href1: https://home.nest.com/home
+href2: "*/settings"
+links:
+  - pre1:       
+    post1:  
+    post2:  
+    post3:  
+
+    name1: flagstar
+    href1: https://www.flagstar.com/myloans/login
+    title1: mortgage
+
+    name2: campbell
+    href2: https://portal.campbellproperty.com/dashboard
+    title2: hoa property manager
+
+    name3: mizner cc
+    href3: https://www.miznercountryclub.org/
+    title3: mizner
+
+  - pre1:    
+    post1:     
+    post2:     
+    post3:     
+
+    name1: fpl
+    href1: https://www.fpl.com/
+    title1: florida power and light
+
+    name2: water
+    href2: https://ebill.pbcwater.com/Security/loginui.aspx
+    title2: palm beach county water
+
+    name3: xfinity
+    href3: https://customer.xfinity.com/
+
+    name4: verizon
+    href4: http://my.verizon.com/
+
+  - pre1:   
+    post1:  
+    post2:  
+    post3:  
+
+
+
+  - label: "-"
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+

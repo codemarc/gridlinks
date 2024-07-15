@@ -34,7 +34,8 @@ export default function CardItem({ dto }) {
       }
    }
    const blink2 = {
-      color: theme.palette.mode === "dark" ? "lightblue" : "green"
+      color: theme.palette.mode === "dark" ? "lightblue" : "green",
+      marginTop: "0px"
    }
 
  const showRows = (o, idx) => {

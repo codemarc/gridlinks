@@ -87,6 +87,7 @@ GRIDLINKS
 |
 +---.vscode                 // common config when using vscode
 |   extensions.json         // suggested extension vscode
+|   gridlinks.code-profile  // vscode importable profile
 |
 +---doc                     // the full documentation to be deployed
 |   package.json            // build and deploy the doc site

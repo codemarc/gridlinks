@@ -39,6 +39,7 @@ const defaultSettings = {
    version: version,
    dm: false,
    gs: false,
+   gd: "builtin",
    header: {
       gh: "https://github.com",
       li: "https://linkedin.com",
@@ -84,6 +85,7 @@ export default function App() {
 
    const [darkMode, setDarkMode] = useState(ls.dm ?? false)
    const [gridSet, setGridSet] = useState(ls.gs ?? false)
+   const [gridData, setGridData] = useState(ls.gd ?? "builtin")
 
    useEffect(() => {
       if (darkMode) {
@@ -93,7 +95,7 @@ export default function App() {
       }
    }, [darkMode])
 
-   const themeProps = { name, ls, darkMode, setDarkMode, gridSet, setGridSet }
+   const themeProps = { name, ls, darkMode, setDarkMode, gridSet, setGridSet, gridData, setGridData }
    const theme = createTheme({
       palette: { mode: darkMode ? "dark" : "light" }
    })
