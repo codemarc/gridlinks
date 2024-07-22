@@ -1,0 +1,30 @@
+title1: public clouds
+href1: https://www.cloudzero.com/blog/cloud-service-providers/
+href2: "*/settings"
+links:
+  - pre1: ㅤ 
+    post1: ㅤㅤ
+    post2: ㅤㅤ
+    post3: ㅤㅤ
+
+    name1: aws
+    href1: https://console.aws.amazon.com/
+
+    name2: azure
+    href2: https://portal.azure.com/#home
+
+    name3: gcp
+    href3: https://console.cloud.google.com/
+
+    name4: do
+    href4: https://cloud.digitalocean.com/login
+
+  - pre1:  
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+
