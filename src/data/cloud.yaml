@@ -19,8 +19,25 @@ links:
     name4: do
     href4: https://cloud.digitalocean.com/login
 
-  - pre1:  
-  - pre1: ㅤ
+  - pre1: ㅤ 
+    post1: ㅤㅤ
+    post2: ㅤㅤ
+    post3: ㅤㅤ
+
+    name1: "-rancher/docs"
+    href1: https://rancher.com/docs/
+
+  - pre1: ㅤ 
+    post1: ㅤㅤ
+    post2: ㅤㅤ
+    post3: ㅤㅤ
+
+    name1: rancher
+    href1: http://localhost
+
+    name2: gridsvcs
+    href2: https://localhost/dashboard/c/local/explorer/namespace/gridsvcs#Resources
+
   - pre1: ㅤ
   - pre1: ㅤ
   - pre1: ㅤ
