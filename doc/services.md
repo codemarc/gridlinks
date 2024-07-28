@@ -6,7 +6,7 @@ The Gridlinks project recognizes the benefits of this architectural style and pl
 
 ## Gridsvcs
 
-The "gridsvcs" set of microservices will be deployed as a set of Docker containers. The Docker containers will be deployed to a Kubernetes cluster, which will be managed by a cloud provider. All the details and code for this effort are available in the [gridsvcs](https://github.com/gridlinks/gridsvcs) GitHub repository. And like this doc it is deployed to [codemarc.net/doc/gridsvcs](https://codemarc.net/doc/gridsvcs).
+The "gridsvcs" set of microservices will be deployed as a set of Docker containers. The Docker containers will be deployed to a Kubernetes cluster, which will be managed by a cloud provider. All the details and code for this effort are available in the [gridsvcs](https://github.com/codemarc/gridsvcs) GitHub repository. And like this doc it is deployed to [codemarc.net/doc/gridsvcs](https://codemarc.net/doc/gridsvcs).
 
 ---
 
