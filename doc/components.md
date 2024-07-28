@@ -215,7 +215,7 @@ Where we  replaced the link color with white and remove the place-items:center s
 ![](https://img.shields.io/badge/component-darkgreen)
 ![GitHub Tag](https://img.shields.io/badge/tag-STEP4-blue)
 
-This is component was created using generative ai which is a computer program that takes in a lot of information (data), learns from it (artificial intelligence), and then comes up with something new all on its own (generative). In our case use OpenAI's ChatGPT 4o we create the message of the day component using this prompt:
+This data for this component is created using generative ai. In our case use OpenAI's ChatGPT 4o we create the message of the day component using this prompt:
 
 > CodeMarc:
 >
@@ -281,6 +281,7 @@ export default MessageOfTheDay
 ```
 
 This is the genesis of the message of the day component. When you are ready, have a look at the source to see [the completed version](https://github.com/codemarc/gridlinks/blob/c6766d46ba7f8b6aa48db5ae1edf9afc8d172753/src/components/Motd.jsx).
+
 
 ---
 

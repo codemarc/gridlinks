@@ -95,4 +95,4 @@ console.log(`archive created: ${DEFZIP}`)
 
 ---
 
-[Back «](pages)  __Publish__  [» Next](README)
+[Back «](services)  __Publish__  [» Next](README)

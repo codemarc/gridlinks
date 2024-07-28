@@ -126,7 +126,7 @@ GRIDLINKS
 
 #### vite.config.js
 
-In order to build our chrome extension using [vite] there are some additional items that must be managed.
+In order to build our chrome extension using [Vite] there are some additional items that must be managed.
 Thankfully there is an open source plugin [CRXJS Vite Plugin] to bundle our extension. I suggest you update
 your [Vite configuration](https://vitejs.dev/config/) to use the crxjs plugin and configure hmr (hot module replacement) server port definition. We also should add a starter [manifest.json](#chrome-extension)
 
@@ -155,7 +155,7 @@ Beyond those changes I think we should add the use of the version from package.j
 
 #### manifest.json
 
-Every [chrome extension] include a manifest.json file that describes the extension's capabilities and configuration
+Every [chrome extension] must include a manifest.json file that describes the extension's capabilities and configuration
 
 ```javascript
 {

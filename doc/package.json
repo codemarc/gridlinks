@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "setup": "yarn global add docsify-cli  && docsify init",
-    "start": "docsify serve -p 3001 .",
+    "doc": "docsify serve -p 3001 .",
     "deploy": "node deploy.js"
   },
   "dependencies": {
