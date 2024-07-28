@@ -18,6 +18,7 @@ import fintech from "./fintech.yaml"
 import genai from "./genai.yaml"
 import google from "./google.yaml"
 import house from "./house.yaml"
+import services from "./services.yaml"
 import shopify from "./shopify.yaml"
 
 
@@ -53,7 +54,7 @@ export default function pdata(ls) {
             sdata.p4 = house
             sdata.p5 = genai
             sdata.p6 = cloud
-            sdata.p7 = p0
+            sdata.p7 = services
             sdata.p8 = entertain
             break
 

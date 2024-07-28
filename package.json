@@ -11,6 +11,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "doc": "cd doc && yarn doc && cd ..",
+    "doc:deploy": "cd doc && yarn deploy && cd ..",
     "package": "node package.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
