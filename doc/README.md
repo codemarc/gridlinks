@@ -16,7 +16,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/codemarc/gridlinks)
 
 
-[Documentation](./doc/README.md) for this [project] is located in the   [docs] folder and using [docsify] we created the [gridlinks][docsite]   docsite, deployed at [codemarc.net/doc/gridlinks][docsite]. *You can install the latest version from the [chrome-web-store]*.
+[Documentation](./doc/README.md) for this [project] is located in the   [docs] folder and using [docsify] we created the [gridlinks][docsite]   docsite, deployed at [codemarc.net/doc/gridlinks][docsite]. *You can install the latest version from the [chrome-web-store]*. If you are looking for the gridsvcs documentation, please see [gridsvcs](https://github.com/codemarc/gridsvcs).
 
 ---
 
