@@ -8,10 +8,10 @@ links:
     post3:    
 
     name2: "motd"
-    href2: "http://codemarc.net:3000/v1/motd"
+    href2: "https://codemarc.net/api/v1/motd"
 
     name3: "quotes"
-    href3: "http://codemarc.net:3000/v1/motd/quotes"
+    href3: "https://codemarc.net/api/v1/motd/quotes"
 
   - pre1: ㅤ
   - pre1: ㅤ
