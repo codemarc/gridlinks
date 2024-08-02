@@ -206,7 +206,6 @@ export default function Settings({ themeProps }) {
                         >
                            <option value="builtin">builtin</option>
                            <option value="personal">personal</option>
-                           <option value="shopping">ecommerce</option>
                         </NativeSelect>
                      </Td>
                   </Tr>
