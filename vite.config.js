@@ -46,7 +46,7 @@ manifest.version_name = version
 export default defineConfig({
   plugins: [react(),  ViteYaml(), crx({ manifest })],
   server: {
-    port: 3000
+    port: 9999
   },
    /**
     * Configures the Vite build process to manually chunk the output based on the dependencies in the `node_modules` directory.
