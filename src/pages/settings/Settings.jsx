@@ -367,7 +367,7 @@ Settings.propTypes = {
       setDarkMode: PropTypes.func.isRequired,
       gridSet: PropTypes.bool.isRequired,
       setGridSet: PropTypes.func.isRequired,
-      grid: PropTypes.string.isRequired,
-      setGrid: PropTypes.func.isRequired,
+      grid: PropTypes.string,
+      setGrid: PropTypes.func
    }).isRequired,
 }
