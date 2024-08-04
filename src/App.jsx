@@ -40,6 +40,8 @@ const defaultSettings = {
    dm: false,
    gs: false,
    gd: "builtin",
+   ts: false,
+   td: "general",
    header: {
       gh: "https://github.com",
       li: "https://linkedin.com",
@@ -52,6 +54,7 @@ const defaultSettings = {
       go: "https://www.google.com/travel/flights",
       sm: "https://client.schwab.com/app/accounts/positions/#/",
       ai: "https://chatgpt.com/",
+      qo: "https://codemarc.net/api/v1/motd",
    }
 }
 
@@ -86,6 +89,10 @@ export default function App() {
    const [darkMode, setDarkMode] = useState(ls.dm ?? false)
    const [gridSet, setGridSet] = useState(ls.gs ?? false)
    const [gridData, setGridData] = useState(ls.gd ?? "builtin")
+   const [topicsSet, setTopics] = useState(ls.gs ?? false)
+   const [topicData, setTopicData] = useState(ls.td ?? "general")
+
+
 
    useEffect(() => {
       if (darkMode) {
@@ -95,7 +102,9 @@ export default function App() {
       }
    }, [darkMode])
 
-   const themeProps = { name, ls, darkMode, setDarkMode, gridSet, setGridSet, gridData, setGridData }
+   const themeProps = { name, ls, darkMode, setDarkMode, gridSet, setGridSet, gridData,
+      setGridData, topicsSet, setTopics, topicData, setTopicData }
+
    const theme = createTheme({
       palette: { mode: darkMode ? "dark" : "light" }
    })

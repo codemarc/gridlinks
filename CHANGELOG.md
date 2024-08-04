@@ -1,5 +1,9 @@
 # gridlinks
 
+Changes for version 0.0.12
+- change default grid data sets
+- prepare for 
+
 Changes for version 0.0.11
 - added domain specific grid data sets
 - added tabset on the main settings page

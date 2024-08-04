@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import { useState, useEffect } from "react"
+import axios from "axios"
 import { useNavigate, useLocation } from "react-router-dom"
 import { Box, Container, Grid, Link, NativeSelect } from "@mui/material"
 import { TextField, Button, Switch, Tabs, Tab } from "@mui/material"
@@ -12,7 +13,13 @@ import { styled } from "@mui/material/styles"
  * The component also provides functionality to reset the settings to their default values and to navigate back to the home page.
  */
 export default function Settings({ themeProps }) {
-   const { name, ls, darkMode, setDarkMode, gridSet, setGridSet, gridData, setGridData } = themeProps
+   const { name, ls } = themeProps
+   const { darkMode, setDarkMode } = themeProps
+   const { gridSet, setGridSet } = themeProps
+   const { gridData, setGridData } = themeProps
+   const { topicsSet, setTopics } = themeProps
+   const { topicData, setTopicData } = themeProps
+   let topiclist = ["general"]
 
    const lcolor = darkMode ? "lightblue" : "#1b2051"
 
@@ -28,7 +35,7 @@ export default function Settings({ themeProps }) {
    const button2 = {textTransform: "none",paddingRight: 2,fontSize: "10pt",fontWeight: 600,textAlign: "center",}
    const line = { margin: "8px 0px 8px 18px", width: "240px" }
 
-   const { gh, li, tw, ig, fb, ic, ib, ca, go, sm, ai } = ls.header
+   const { gh, li, tw, ig, fb, ic, ib, ca, go, sm, ai, qo } = ls.header
    const [githubUrl, setGithubUrl] = useState(gh ?? "")
    const [linkedinUrl, setLinkedinUrl] = useState(li ?? "")
    const [twitterUrl, setTwitterUrl] = useState(tw ?? "")
@@ -40,8 +47,11 @@ export default function Settings({ themeProps }) {
    const [travelUrl, setTravelUrl] = useState(go ?? "")
    const [brokerUrl, setBrokerUrl] = useState(sm ?? "")
    const [chataiUrl, setChataiUrl] = useState(ai ?? "")
+   const [motdUrl, setMotdUrl] = useState(qo ?? "")
+
    // Add state for active tab
    const [value, setValue] = useState(0)
+   const [topicList, setTopicList] = useState([]);
 
    useEffect(() => {
       setGithubUrl(gh)
@@ -55,7 +65,8 @@ export default function Settings({ themeProps }) {
       setTravelUrl(go)
       setBrokerUrl(sm)
       setChataiUrl(ai)
-   }, [gh, li, tw, ig, fb, ic, ib, ca, go, sm, ai])
+      setMotdUrl(qo)
+   }, [gh, li, tw, ig, fb, ic, ib, ca, go, sm, ai, qo])
 
    const pagelink = "/settings"
    const navigate = useNavigate()
@@ -92,6 +103,7 @@ export default function Settings({ themeProps }) {
       ls.header.go = travelUrl
       ls.header.sm = brokerUrl
       ls.header.ai = chataiUrl
+      ls.header.qo = motdUrl
       localStorage.setItem(name, JSON.stringify(ls))
       handleNav()
    }
@@ -117,6 +129,39 @@ export default function Settings({ themeProps }) {
    const handleChange = (event, newValue) => {
       setValue(newValue)
    }
+
+   const fetchTopics = async () => {
+      try {
+         const response = await axios.get(qo+'/topics/')
+         const topicNames = response.data.map(item => item.topic)
+         setTopicList(topicNames);
+
+         if(!topicNames.includes(topicData)){
+            setTopicData(topicNames[0])
+         }
+      } catch (error) {
+         console.error('Error fetching topics:', error)
+      }
+   }
+   useEffect(() => {fetchTopics()},[])
+
+   const toggleTopicsSet = () => {
+      ls.ts = !topicsSet
+      setTopics(ls.ts)
+      if (ls.ts) {
+         setGridData(ls.td ?? "builtin")
+      }
+      localStorage.setItem(name, JSON.stringify(ls))
+   }
+
+   const handleChangeTopicData = (e) => {
+      setTopicData(e.target.value)
+      ls.td = e.target.value
+      localStorage.setItem(name, JSON.stringify(ls))
+   }
+
+
+
    const tabStyle = {
       fontSize: "10pt",
       textTransform: "none",
@@ -152,7 +197,7 @@ export default function Settings({ themeProps }) {
             }}
          >
             <Tab label="General" sx={tabStyle} />
-            <Tab label="Icon Links" sx={tabStyle} />
+            <Tab label="Links" sx={tabStyle} />
          </Tabs>
 
          {/* Conditional rendering based on the active tab */}
@@ -166,6 +211,7 @@ export default function Settings({ themeProps }) {
                }}
             >
                <Table>
+                  <tbody>
                   <Tr>
                      <Td sx={{ width: "112px" }}>Appearance:</Td>
                      <Td sx={{ width: "150px" }}>
@@ -177,6 +223,40 @@ export default function Settings({ themeProps }) {
                         dark mode
                      </Td>
                      <Td></Td>
+                  </Tr>
+                  <Tr>
+                     <Td>Quotes:</Td>
+                     <Td>
+                        <Switch
+                           checked={topicsSet}
+                           onChange={toggleTopicsSet}
+                           inputProps={{ "aria-label": "Alternate set toggle" }}
+                        />
+                        topics
+                     </Td>
+                     <Td>
+                        <NativeSelect
+                           disabled={!topicsSet}
+                           onChange={handleChangeTopicData}
+                           sx={{
+                              height: "28px",
+                              width: "220px",
+                              fontSize: "10pt",
+                              color: lcolor,
+                           }}
+                           defaultValue={topicData}
+                           inputProps={{
+                              name: "grid",
+                              id: "uncontrolled-native",
+                           }}
+                        >
+                              {topicList.map((topic, index) => (
+                                 <option key={index} value={topic}>
+                                    {topic}
+                                 </option>
+                              ))}
+                        </NativeSelect>
+                     </Td>
                   </Tr>
                   <Tr>
                      <Td>Gridset:</Td>
@@ -209,6 +289,7 @@ export default function Settings({ themeProps }) {
                         </NativeSelect>
                      </Td>
                   </Tr>
+                  </tbody>
                </Table>
             </Box>
          )}
@@ -323,6 +404,17 @@ export default function Settings({ themeProps }) {
                   onChange={(event) => setChataiUrl(event.target.value)}
                   value={chataiUrl}
                />
+
+               <TextField
+                  name="motd"
+                  key="motdUrl"
+                  label="Message of the Day URL"
+                  size="small"
+                  sx={line}
+                  onChange={(event) => setChataiUrl(event.target.value)}
+                  value={motdUrl}
+               />
+
             </form>
          )}
          <Grid item sx={button1}>
@@ -367,6 +459,13 @@ Settings.propTypes = {
       gridSet: PropTypes.bool.isRequired,
       setGridSet: PropTypes.func.isRequired,
       grid: PropTypes.string,
-      setGrid: PropTypes.func
+      setGrid: PropTypes.func,
+      gridData: PropTypes.string,
+      setGridData: PropTypes.func,
+      topicsSet: PropTypes.bool.isRequired,
+      setTopics: PropTypes.func.isRequired,
+      topicData: PropTypes.string,
+      setTopicData: PropTypes.func,
+
    }).isRequired,
 }
