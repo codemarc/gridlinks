@@ -1,5 +1,7 @@
 # gridlinks
 
+Changes for version 0.0.13
+
 Changes for version 0.0.12
 - added message of the day topics and settings
 - change default grid data sets
