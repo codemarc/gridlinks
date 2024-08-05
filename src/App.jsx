@@ -89,7 +89,7 @@ export default function App() {
    const [darkMode, setDarkMode] = useState(ls.dm ?? false)
    const [gridSet, setGridSet] = useState(ls.gs ?? false)
    const [gridData, setGridData] = useState(ls.gd ?? "builtin")
-   const [topicsSet, setTopics] = useState(ls.gs ?? false)
+   const [topicsSet, setTopics] = useState(ls.ts ?? false)
    const [topicData, setTopicData] = useState(ls.td ?? "general")
 
 

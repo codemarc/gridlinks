@@ -1,16 +1,19 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react'
 import { Grid, Container, Link } from '@mui/material'
 import { useTheme } from "@mui/material/styles"
 import quotes from '../data/quotes.json'
 import packageJson from "../../package.json"
 
-export default function Motd() {
+export default function Motd({themeProps}) {
+   const { ls } = themeProps
    const theme = useTheme()
    const [quote, setQuote] = useState({})
+   const qlist = (ls.ts) ? ls.quotes : quotes
 
     useEffect(() => {
-        const randomIndex = Math.floor(Math.random() * quotes.length)
-        setQuote(quotes[randomIndex])
+        const randomIndex = Math.floor(Math.random() * qlist.length)
+        setQuote(qlist[randomIndex])
     }, [])
 
     return (

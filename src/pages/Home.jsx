@@ -65,7 +65,7 @@ export default function Home({ themeProps }) {
    const keys = Object.keys(data)
    return (
       <>
-         <Motd />
+         <Motd themeProps={themeProps} />
          <Box sx={{ flexGrow: 1, padding: "4px", marginTop: "-2px", maxWidth: "900px" }}>
             <Grid container spacing={0}>
                {keys.map((o, ndx) => (
