@@ -19,7 +19,7 @@ export default function Motd({themeProps}) {
     return (
       <Grid container spacing={0}>
          <Container sx={{ margin: "8px 12px 3px 12px"}}>
-            <Link onClick={() => window.open(packageJson.description)} sx={{
+            <Link onClick={() => window.open(packageJson.config.status)} sx={{
                color: theme.palette.mode === "dark" ? "white" : "#1b2051",
                fontSize:"12px",
                textShadow:"none",

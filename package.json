@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/codemarc/gridlinks"
   },
+  "config": {
+   "status":"https://codemarc.net/report.html"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
