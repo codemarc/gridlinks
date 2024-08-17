@@ -38,39 +38,29 @@ links:
     name4: verizon
     href4: http://my.verizon.com/
 
+  - pre1:  
+  - pre1:  
+  - pre1:  
 
-  - name1: "-cards"
+  - name1: "-education"
+    href1: https://studentaid.gov/h/apply-for-aid/fafsa
 
-  - pre1: "       "
+  - pre1:  ㅤ
     post1: ㅤ
     post2: ㅤ
     post3: ㅤ
 
-    name1: discover
-    href1: https://portal.discover.com/customersvcs/universalLogin/ac_main
+    name1: one.uf
+    href1: https://one.uf.edu/
 
+    name2: dpe
+    href2: https://www.billhighway.com/aph/forChapters/v2/login.aspx
 
-    name2: apple
-    href2: https://card.apple.com
+    name3: gru
+    href3: https://myaccount.gru.com
 
-    name3: ignite
-    href3: https://cards.theignitecard.com/dfc/dashboard
-
-  - pre1: "~  syncbank ⇒ "
-    post1: ㅤ|ㅤ
-    post2: ㅤ
-    post3: ㅤ
-
-    name1: amazon
-    href1: https://www.synchrony.com/accounts/?client=amazon
-
-    name2: others
-    href2: https://www.synchrony.com/accounts/
-
-  - pre1:  ㅤ
-
-  - name1: "-loans"
-    href1: https://studentaid.gov/h/apply-for-aid/fafsa
+    name4: trimark
+    href4: https://trimarkp.twa.rentmanager.com/Shared/Login
 
   - pre1:  ㅤ
     post1: ㅤ
@@ -86,3 +76,4 @@ links:
     name3: salliemae
     href3: https://www.salliemae.com/login/
 
+  - pre1:  

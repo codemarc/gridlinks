@@ -75,7 +75,32 @@ links:
 
     name4: hsbc
 
-  - pre1: ㅤ
-  - pre1: ㅤ
-  - pre1: ㅤ
-  - pre1: ㅤ
+  - name1: "-cards"
+
+  - pre1: "       "
+    post1: ㅤ
+    post2: ㅤ
+    post3: ㅤ
+
+    name1: discover
+    href1: https://portal.discover.com/customersvcs/universalLogin/ac_main
+
+
+    name2: apple
+    href2: https://card.apple.com
+
+    name3: ignite
+    href3: https://cards.theignitecard.com/dfc/dashboard
+
+  - pre1: "~  syncbank ⇒ "
+    post1: ㅤ|ㅤ
+    post2: ㅤ
+    post3: ㅤ
+
+    name1: amazon
+    href1: https://www.synchrony.com/accounts/?client=amazon
+
+    name2: others
+    href2: https://www.synchrony.com/accounts/
+
+  - pre1:  

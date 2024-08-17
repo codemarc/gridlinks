@@ -9,7 +9,7 @@
     "url": "https://github.com/codemarc/gridlinks"
   },
   "config": {
-   "status":"https://codemarc.net/report.html"
+    "status": "https://codemarc.net/report.html"
   },
   "scripts": {
     "dev": "vite",

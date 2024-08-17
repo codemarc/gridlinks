@@ -9,13 +9,13 @@ links:
 
 
     name1: dev
-    href1: "http://localhost:3000/v1/api-docs/"
+    href1: http://localhost:3000/v1/api-docs/
 
     name2: test
     href2: https://codemarc.net/api/v1/api-docs/
 
     name3: prod
-    href3: https://codemarc.net/api/v1/api-docs/
+    href3: http://localhost:3000/v1/api-docs/
 
   - pre1: ""
 
@@ -52,23 +52,29 @@ links:
     post2: " |"
 
     name1: status
+    href1: http://localhost:3000/v1/motd/status
 
     name2: quotes
+    href2: http://localhost:3000/v1/motd/quotes
 
     name3: topics
+    href3: http://localhost:3000/v1/motd/topics
 
   - pre1: ""
 
   - pre1: "~  projects"
 
-  - name1: gridlinks
+  - pre1: ㅤ
+    post1: ㅤ
+    post2: ㅤ
+    post3: ㅤ
+
+    name1: gridlinks
     href1: https://github.com/users/codemarc/projects/6
 
     name2: gridsvcs
     href2: https://github.com/users/codemarc/projects/5
 
-    name3: passportjs
-    href3: https://www.passportjs.org/
 
   - pre1: ㅤ
   - pre1: ㅤ

@@ -1,6 +1,6 @@
 // import blank from "./blank.yaml"
 // import p0 from "./p0.yaml"
-import p1 from "./p1.yaml"
+import p1 from "./comms.yaml"
 import p2 from "./p2.yaml"
 import p3 from "./genai.yaml"
 import p4 from "./devops.yaml"
