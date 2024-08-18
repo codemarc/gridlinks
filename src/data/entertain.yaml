@@ -1,4 +1,5 @@
-title1: stream
+title1: stream / shop
+href1: https://www.shopify.com/
 href2: "*/settings"
 links:
   - pre1:     
@@ -56,8 +57,6 @@ links:
     name4: peacock
     href4: http://peacock.tv/
 
-  - label: "-"
-
   - pre1:       
     post1:   
     post2:   
@@ -72,10 +71,64 @@ links:
     name3: spotify
     href3: https://www.spotify.com/
 
+  - pre1:  
+    name1: "-shopify"
+    href1: https://www.shopify.com/editions/summer2024
+    xhref1: https://www.shopify.com/
 
-  - pre1: ㅤ
-  - pre1: ㅤ
-  - pre1: ㅤ
-  - pre1: ㅤ
-  - pre1: ㅤ
-  - pre1: ㅤ
+  - pre1:    
+    post2:   
+    post3:   
+
+    name1: the puppy leo shop
+    href1: http://puppyleo.com
+
+    name2:  🐶   admin
+    href2: https://admin.shopify.com/
+
+  - pre1:       
+    post1:   
+    post2:   
+    post3:   
+
+    name1: zendrop
+    href1: https://app.zendrop.com/dashboard
+
+    name2: cj
+    href2: https://www.cjdropshipping.com/
+
+    name3: shineon
+    href3: https://www.shineon.com/"
+
+    name4: printful
+    href4: https://www.printful.com/
+
+  - pre1:            
+    post1:   
+    post2:   
+    post3:   
+
+    name1: src
+    href1: https://shopify.github.io
+
+    name2: dev
+    href2: https://shopify.dev/
+
+    name3: apps
+    href3: https://apps.shopify.com/
+    title3: Shopify App Store
+
+    name4: polaris
+    href4: https://polaris.shopify.com/
+    title4: Shopify Polaris - React Components
+
+  - pre1:       
+    post1:   
+    post2:   
+    post3:   
+
+  - pre1:       
+    post1:   
+    post2:   
+    post3:   
+
