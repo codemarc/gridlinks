@@ -63,6 +63,16 @@ links:
     name3: sourcegraph
     href3: https://sourcegraph.com/search
 
-  - pre1: ㅤ
+  - pre1: "~  lamatic   "
+    post1:   
+    post2:  
+    post3:  
+
+
+    name1: docs
+    href1: https://lamatic.ai/docs
+
+    name2: studio
+    href2: https://studio.lamatic.ai/
 
   - pre1: ㅤ
