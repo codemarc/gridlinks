@@ -28,7 +28,7 @@ export default function GridCard({ dto }) {
            cursor: "pointer"
          }
         }}>
-          {dto.title1}
+            {dto.title}{dto.title1}
         </Link>
       )
     }
