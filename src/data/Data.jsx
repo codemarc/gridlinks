@@ -1,7 +1,7 @@
 // import blank from "./blank.yaml"
 // import p0 from "./p0.yaml"
 import p1 from "./comms.yaml"
-import p2 from "./p2.yaml"
+import p2 from "./devtools.yaml"
 import p3 from "./genai.yaml"
 import p4 from "./devops.yaml"
 import p5 from "./p5.yaml"
@@ -13,6 +13,7 @@ import p8 from "./shopify.yaml"
 import apache from "./apache.yaml"
 import banking from "./banking.yaml"
 import cloud from "./cloud.yaml"
+import comms from "./comms.yaml"
 import entertain from "./entertain.yaml"
 import fintech from "./fintech.yaml"
 import genai from "./genai.yaml"
@@ -48,7 +49,7 @@ export default function pdata(ls) {
       // alternate
       switch (ls.gd) {
          case "personal":
-            sdata.p1 = p1
+            sdata.p1 = comms
             sdata.p2 = fintech
             sdata.p3 = banking
             sdata.p4 = house
