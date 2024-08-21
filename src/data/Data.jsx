@@ -8,28 +8,25 @@ import cloud from "./cloud.yaml"
 import comms from "./comms.yaml"
 import devops from "./devops.yaml"
 import devtools from "./devtools.yaml"
-import entertain from "./entertain.yaml"
 import fintech from "./fintech.yaml"
 import genai from "./genai.yaml"
-import google from "./google.yaml"
+import goog from "./goog.yaml"
 import house from "./house.yaml"
 import msft from "./msft.yaml"
 import services from "./services.yaml"
 import shopify from "./shopify.yaml"
-
-
-const sdata = {}
+import stream from "./stream.yaml"
 
 export default function pdata(ls) {
+   let sdata = {}
    if (!ls.gs) {
-      // default - builtin
       sdata.p1 = comms
       sdata.p2 = devtools
       sdata.p3 = genai
       sdata.p4 = devops
       sdata.p5 = msft
       sdata.p6 = amzn
-      sdata.p7 = google
+      sdata.p7 = goog
       sdata.p8 = apache
    } else {
       // alternate
@@ -42,17 +39,20 @@ export default function pdata(ls) {
             sdata.p5 = genai
             sdata.p6 = cloud
             sdata.p7 = services
-            sdata.p8 = entertain
-            break
-
-         case "ecomerce":
+            sdata.p8 = stream
             break
 
          default:
-            sdata.p7 = apache
-            sdata.p8 = shopify
+            sdata.p1 = comms
+            sdata.p2 = devtools
+            sdata.p3 = genai
+            sdata.p4 = devops
+            sdata.p5 = msft
+            sdata.p6 = amzn
+            sdata.p7 = goog
+            sdata.p8 = apache
+
       }
    }
-
    return sdata
 }

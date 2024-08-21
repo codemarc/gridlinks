@@ -1,4 +1,5 @@
-title1: shopify
+name:  shopify
+title: shopify
 href1: https://www.shopify.com/
 title2: status
 href2: https://www.shopifystatus.com/
@@ -31,10 +32,10 @@ links:
   - pre1: ㅤㅤ
     name1: summer 2024
     href1: https://www.shopify.com/editions/summer2024
-    
+
     pre2: ㅤ
     name2: changelog
-    href2: https://shopify.dev/changelog    
+    href2: https://shopify.dev/changelog
 
   - name1: "  src  "
     href1: https://shopify.github.io
