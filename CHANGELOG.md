@@ -1,5 +1,7 @@
 # gridlinks
 
+Changes for version 0.0.14
+
 Changes for version 0.0.13
 - added Lumatic to my code genai tools
 - created stream/shop with shopify links

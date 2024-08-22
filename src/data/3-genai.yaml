@@ -1,4 +1,4 @@
-name:
+name: genai
 title: genai / tools
 href1: p3
 href2: "*/settings"
@@ -68,7 +68,6 @@ links:
     post1:   
     post2:  
     post3:  
-
 
     name1: docs
     href1: https://lamatic.ai/docs
