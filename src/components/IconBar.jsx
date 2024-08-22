@@ -38,8 +38,8 @@ import AirplaneTicketIcon from "@mui/icons-material/AirplaneTicket";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import SearchIcon from "@mui/icons-material/Search";
 import SettingsIcon from "@mui/icons-material/Settings";
-import LoginIcon from "@mui/icons-material/Login";
-import LogoutIcon from "@mui/icons-material/Logout";
+// import LoginIcon from "@mui/icons-material/Login";
+// import LogoutIcon from "@mui/icons-material/Logout";
 
 /**
  * The `IconBar` component renders a horizontal stack of icon buttons that provide links to various social media and application pages.
@@ -49,9 +49,9 @@ import LogoutIcon from "@mui/icons-material/Logout";
  */
 export default function IconBar({ themeProps }) {
    const { ls } = themeProps;
-   // const u_search = "/search";
+   const u_search = "/search";
    const u_settings = "/settings";
-   const u_login = "/login";
+   // const u_login = "/login";
 
    const navigate = useNavigate();
    const location = useLocation();
@@ -133,15 +133,15 @@ export default function IconBar({ themeProps }) {
                </SvgIcon>
             </IconButton>
 
-            {/* <IconButton title={u_search} aria-label="search" onClick={() => { navigate(u_search) }} >
+            <IconButton title={u_search} aria-label="search" onClick={() => { navigate(u_search) }} >
                <SearchIcon />
-            </IconButton> */}
+            </IconButton>
 
-            <IconButton title={u_settings} aria-label="settings" onClick={() => {
+            {/* <IconButton title={u_settings} aria-label="settings" onClick={() => {
                navigate(u_login)
             }} >
                <LoginIcon />
-            </IconButton>
+            </IconButton> */}
 
             <IconButton title={u_settings} aria-label="settings" onClick={() => {
                   navigate(location.pathname === u_settings ? "/" : u_settings) }} >

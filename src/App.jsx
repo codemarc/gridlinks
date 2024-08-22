@@ -32,7 +32,7 @@ import Home from "./pages/Home"
 import Search from "./pages/Search"
 import { Settings } from "./pages/Settings"
 
-import Login from "./pages/Login"
+// import Login from "./pages/Login"
 // import { Register } from "./pages/Register"
 
 import packageJson from "../package.json"
@@ -121,7 +121,8 @@ export default function App() {
                <Route path="/" element={<Home themeProps={themeProps} />} />
                <Route path="/search" element={<Search themeProps={themeProps} />}  />
                <Route path="/settings" element={<Settings themeProps={themeProps} />} />
-               <Route path="/login" element={<Login theme={theme} themeProps={themeProps} />} />
+               {/* <Route path="/login" element={<Login theme={theme} themeProps={themeProps} />} /> */}
+
                {/* This is a catch-all route */}
                <Route path="*" element={<Home themeProps={themeProps} />} />
             </Routes>
