@@ -1,6 +1,9 @@
 # gridlinks
 
 Changes for version 0.0.13
+- added Lumatic to my code genai tools
+- created stream/shop with shopify links
+- mostly data cleanup and debt reduction
 
 Changes for version 0.0.12
 - added message of the day topics and settings
