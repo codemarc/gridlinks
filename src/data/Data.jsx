@@ -1,6 +1,7 @@
 // import blank   from "./blank.yaml"
 // import shopify from "./15-shopify.yaml"
 
+import blank    from "./0-blank.yaml"
 import comms    from "./1-comms.yaml"
 import devtools from "./2-devtools.yaml"
 import genai    from "./3-genai.yaml"
@@ -31,6 +32,17 @@ export default function pdata(ls) {
    } else {
       // alternate
       switch (ls.gd) {
+         case "test":
+            sdata.p1 = blank
+            sdata.p2 = blank
+            sdata.p3 = blank
+            sdata.p4 = blank
+            sdata.p5 = blank
+            sdata.p6 = blank
+            sdata.p7 = blank
+            sdata.p8 = blank
+            break;
+
          case "personal":
             sdata.p1 = comms
             sdata.p2 = fintech

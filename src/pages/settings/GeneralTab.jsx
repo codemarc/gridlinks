@@ -142,6 +142,7 @@ export function GeneralTab({ lcolor, themeProps }) {
                      >
                         <option value="builtin">builtin</option>
                         <option value="personal">personal</option>
+                        <option value="test">test</option>
                      </NativeSelect>
                   </Td>
                </Tr>
