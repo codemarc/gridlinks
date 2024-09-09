@@ -10,13 +10,13 @@ links:
 
 
     name1: dev
-    href1: http://localhost:3000/v1/api-docs/
+    href1: http://localhost:3000/v1/motd/api-docs/
 
     name2: test
-    href2: https://codemarc.net/api/v1/api-docs/
+    href2: https://codemarc.net/api/v1/motd/api-docs/
 
     name3: prod
-    href3: http://localhost:3000/v1/api-docs/
+    href3: http://localhost:3000/v1/motd/api-docs/
 
   - pre1: ""
 

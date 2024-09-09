@@ -9,7 +9,7 @@ export default function Motd({themeProps}) {
    const { ls } = themeProps
    const theme = useTheme()
    const [quote, setQuote] = useState({})
-   const qlist = (ls.ts) ? ls.quotes : quotes
+   const qlist = (ls.ts) ? ls.quotes??quotes : quotes
 
     useEffect(() => {
         const randomIndex = Math.floor(Math.random() * qlist.length)

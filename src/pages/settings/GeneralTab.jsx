@@ -5,22 +5,8 @@ import { Box } from "@mui/material"
 import { Table, Tr, Td } from "./StyledComponents"
 import { Switch, NativeSelect } from "@mui/material"
 
-const tabFrame = {
-   marginLeft: "22px",
-   height: "224px",
-   fontSize: "10pt",
-   padding: "8px",
-   // border: "1px solid #ccc",
-}
-
-const nativeSelect = (lcolor) => {
-   return {
-      height: "28px",
-      width: "220px",
-      fontSize: "10pt",
-      color: lcolor,
-   }
-}
+const tabFrame = { marginLeft: "22px", height: "224px", fontSize: "10pt", padding: "8px"}
+const nativeSelect = (lcolor) => { return {height: "28px", width: "220px", fontSize: "10pt", color: lcolor}}
 
 export function GeneralTab({ lcolor, themeProps }) {
    const { name, ls, darkMode, setDarkMode } = themeProps
@@ -31,22 +17,12 @@ export function GeneralTab({ lcolor, themeProps }) {
 
    const [topicList, setTopicList] = useState([])
 
-   const fetchTopics = async () => {
-      let topicNames = []
-      try {
-         const response = await axios.get(ls.header.qo + '/topics/')
-         topicNames = response.data.map(item => item.topic)
-         setTopicList(topicNames)
-      } catch (error) {
-         console.error('Error fetching topics:', error)
-      } finally {
-         setTopicData(ls.td ?? "general")
-      }
-   }
-
-   // eslint-disable-next-line react-hooks/exhaustive-deps
-   useEffect(() => {fetchTopics()}, [])
-
+   useEffect(() => {
+      axios.get(ls.header.qo + '/topics/')
+      .then(response => {setTopicList(response.data.map(item => item.topic))})
+      .catch(error => { console.error('Error fetching topics:', error)})
+      .finally(() => { setTopicData(ls.td ?? "general") })
+   }, [ls.header.qo, ls.td])//, setTopicData])
 
    const toggleDarkMode = () => {
       ls.dm = !darkMode
