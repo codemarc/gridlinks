@@ -29,8 +29,10 @@ import "./App.css"
 import Header from "./components/Header"
 import Home from "./pages/Home"
 
-import Search from "./pages/Search"
+// import Search from "./pages/Search"
 import { Settings } from "./pages/Settings"
+import { PwdGen } from "./pages/PwdGen"
+
 
 // import Login from "./pages/Login"
 // import { Register } from "./pages/Register"
@@ -46,15 +48,17 @@ const defaultSettings = {
    ts: false,
    td: "general",
    header: {
-      gh: "https://github.com",
+      gh: "https://github.com/bltcore-com",
       li: "https://linkedin.com",
       tw: "https://twitter.com",
       ig: "https://instagram.com",
-      fb: "https://facebook.com",
+      fb: "https://www.meta.ai/",
+      gl: "https://drive.google.com/drive/u/0/folders/164qd8huQcm0U3NSuA31GtqiexsbdcR7v",
       ic: "https://icloud.com",
       ib: "https://outlook.office.com/mail/",
       ca: "https://outlook.office.com/calendar/view/month",
       go: "https://www.google.com/travel/flights",
+      ba: "https://www.chase.com/",
       sm: "https://client.schwab.com/app/accounts/positions/#/",
       ai: "https://chatgpt.com/",
       qo: "https://codemarc.net/api/v1/motd",
@@ -119,7 +123,7 @@ export default function App() {
             <Header themeProps={themeProps} />
             <Routes>
                <Route path="/" element={<Home themeProps={themeProps} />} />
-               <Route path="/search" element={<Search themeProps={themeProps} />}  />
+               <Route path="/pwdgen" element={<PwdGen themeProps={themeProps} />} />
                <Route path="/settings" element={<Settings themeProps={themeProps} />} />
                {/* <Route path="/login" element={<Login theme={theme} themeProps={themeProps} />} /> */}
 

@@ -13,15 +13,14 @@ export function SettingsHeader({ tabSet, handleTabChange, lcolor }) {
       <>
          <Container sx={{ margin: "8px 8px 0px 0px" }}>
             <Div lcolor={lcolor}>
-               Settings -{" "}
                <Link sx={linkStyle} href={chromeDeveloperDashboardLink}>
-                  Gridlinks
+                  Settings
                </Link>
             </Div>
          </Container>
          <Tabs value={tabSet} onChange={handleTabChange} aria-label="settings tabs" sx={tabMargins}>
             <Tab label="General" sx={tabStyle} />
-            <Tab label="Links" sx={tabStyle} />
+            {/* <Tab label="Links" sx={tabStyle} /> */}
          </Tabs>
       </>
    )

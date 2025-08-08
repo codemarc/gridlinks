@@ -142,12 +142,15 @@ export default function Settings({ themeProps }) {
    return (
       <Box sx={{ fontFamily: "Verdana, Geneva, Tahoma, sans-serif", margin: "12px 0px 0px 2px" }}>
          <SettingsHeader tabSet={tabSet} handleTabChange={handleChange} lcolor={lcolor} />
+         <GeneralTab lcolor={lcolor} themeProps={themeProps} />
+         {/*
          {
             tabSet === 0 && ( <GeneralTab lcolor={lcolor} themeProps={themeProps} /> )
          }
          {
             tabSet === 1 && ( <LinksTab lcolor={lcolor} handleUpdate={handleUpdate} toolProps={toolProps} />  )
          }
+          */}
          <SettingsFooter lcolor={lcolor} handleCancel={handleCancel} handleUpdate={handleUpdate} handleReset={handleReset} />
       </Box>
    )

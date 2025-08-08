@@ -1,7 +1,7 @@
 // import blank   from "./blank.yaml"
 // import shopify from "./15-shopify.yaml"
-
-import blank    from "./0-blank.yaml"
+// import blank    from "./0-blank.yaml"
+import blank from "./0-notinuse.yaml"
 import comms    from "./1-comms.yaml"
 import devtools from "./2-devtools.yaml"
 import genai    from "./3-genai.yaml"
@@ -21,14 +21,14 @@ import stream   from "./14-stream.yaml"
 export default function pdata(ls) {
    let sdata = {}
    if (!ls.gs) {
-      sdata.p1 = comms
-      sdata.p2 = devtools
-      sdata.p3 = genai
-      sdata.p4 = devops
-      sdata.p5 = msft
-      sdata.p6 = amzn
-      sdata.p7 = goog
-      sdata.p8 = apache
+      sdata.p1 = blank
+      sdata.p2 = blank
+      sdata.p3 = blank
+      sdata.p4 = blank
+      sdata.p5 = blank
+      sdata.p6 = blank
+      sdata.p7 = blank
+      sdata.p8 = blank
    } else {
       // alternate
       switch (ls.gd) {
@@ -55,14 +55,14 @@ export default function pdata(ls) {
             break
 
          default:
-            sdata.p1 = comms
-            sdata.p2 = devtools
-            sdata.p3 = genai
-            sdata.p4 = devops
-            sdata.p5 = msft
-            sdata.p6 = amzn
-            sdata.p7 = goog
-            sdata.p8 = apache
+            sdata.p1 = blank
+            sdata.p2 = blank
+            sdata.p3 = blank
+            sdata.p4 = blank
+            sdata.p5 = blank
+            sdata.p6 = blank
+            sdata.p7 = blank
+            sdata.p8 = blank
 
       }
    }

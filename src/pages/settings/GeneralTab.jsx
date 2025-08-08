@@ -3,10 +3,9 @@ import { useState, useEffect } from "react"
 import axios from "axios"
 import { Box } from "@mui/material"
 import { Table, Tr, Td } from "./StyledComponents"
-import { Switch, NativeSelect } from "@mui/material"
+import { Switch } from "@mui/material"
 
-const tabFrame = { marginLeft: "22px", height: "224px", fontSize: "10pt", padding: "8px"}
-const nativeSelect = (lcolor) => { return {height: "28px", width: "220px", fontSize: "10pt", color: lcolor}}
+const tabFrame = { marginLeft: "22px", height: "224px", fontSize: "10pt", padding: "8px" }
 
 export function GeneralTab({ lcolor, themeProps }) {
    const { name, ls, darkMode, setDarkMode } = themeProps
@@ -71,56 +70,6 @@ export function GeneralTab({ lcolor, themeProps }) {
                      dark mode
                   </Td>
                   <Td></Td>
-               </Tr>
-               <Tr>
-                  <Td>Quotes:</Td>
-                  <Td>
-                     <Switch
-                        checked={topicsSet}
-                        onChange={toggleTopicsSet}
-                        inputProps={{ "aria-label": "Alternate set toggle" }}
-                     />
-                     topics
-                  </Td>
-                  <Td>
-                     <NativeSelect
-                        disabled={!topicsSet}
-                        onChange={handleChangeTopicData}
-                        sx={nativeSelect(lcolor)}
-                        value={topicData}
-                        inputProps={{ name: "grid", id: "uncontrolled-native" }}
-                     >
-                        {topicList.map((topic, index) => (
-                           <option key={index} value={topic}>
-                              {topic}
-                           </option>
-                        ))}
-                     </NativeSelect>
-                  </Td>
-               </Tr>
-               <Tr>
-                  <Td>Gridset:</Td>
-                  <Td>
-                     <Switch
-                        checked={gridSet}
-                        onChange={toggleGridSet}
-                        inputProps={{ "aria-label": "Alternate set toggle" }}
-                     />
-                     alternate
-                  </Td>
-                  <Td>
-                     <NativeSelect
-                        disabled={!gridSet}
-                        onChange={handleChangeGridData}
-                        sx={nativeSelect(lcolor)}
-                        defaultValue={gridData}
-                        inputProps={{name: "grid",id: "uncontrolled-native"}}
-                     >
-                        <option value="builtin">builtin</option>
-                        <option value="personal">personal</option>
-                        <option value="test">test</option>
-                     </NativeSelect>
-                  </Td>
                </Tr>
             </tbody>
          </Table>

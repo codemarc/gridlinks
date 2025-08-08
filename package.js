@@ -2,8 +2,8 @@
 import shell from 'shelljs'
 import exec from 'shelljs.exec'
 import archiver from 'archiver'
-import fs from 'fs'
-import process from 'process'
+import fs from 'node:fs'
+import process from 'node:process'
 
 (async() => {
    const args = process.argv.slice(2)
@@ -12,12 +12,12 @@ import process from 'process'
       const dist  = './dist'
       shell.rm('-rf',dist)
       shell.mkdir('-p',dist)
-      exec(`yarn build`)
+      exec("pnpm build")
 
       const cdir=shell.pwd()
       exec(`open -n -b com.google.chrome --args --pack-extension=${cdir}/dist --pack-extension-key=${cdir}/dist.pem`)
 
-      const DEFZIP  = "gridlinks.zip"
+      const DEFZIP = "blt.zip"
       const output = fs.createWriteStream(DEFZIP)
       const archive = archiver('zip')
       archive.pipe(output)
@@ -43,12 +43,12 @@ import process from 'process'
          console.log(await exec(nargs).stdout)
 
       } else if(args[0] === '-f') {
-         const nargs='npx ncu -u -f '+args[1]
+         const nargs = `npx ncu -u -f ${args[1]}`
          console.log(nargs)
          console.log(await exec(nargs).stdout)
       }
       else {
-         console.log('gridlinks package utility')
+         console.log('blt package utility')
          console.log('usage: package [patch | minor | -v | -f packagename]]')
       }
    }

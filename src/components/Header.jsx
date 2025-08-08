@@ -29,8 +29,6 @@ import { AppBar, Toolbar, Box, Button } from "@mui/material"
  */
 import IconBar from "./IconBar";
 
-const website = "https://codemarc.net"
-
 
 /**
  * Renders the header component for the application.
@@ -47,7 +45,7 @@ const website = "https://codemarc.net"
  */
 export default function Header({ themeProps }) {
    // const { name, ls, darkMode, setDarkMode } = themeProps
-   const { name, ls, darkMode } = themeProps;
+   const { name, ls, darkMode, setDarkMode } = themeProps;
    const versionText = `v${ls.version}`;
 
    // const toggleDarkMode = () => {
@@ -62,55 +60,78 @@ export default function Header({ themeProps }) {
             <AppBar
                position="static"
                sx={{
-                  backgroundColor: darkMode ? "transparent" : "#008f00",
+                  backgroundColor: darkMode ? "hsl(221 83% 13%)" : "hsl(0 0% 100%)",
+                  borderBottom: "1px solid",
+                  borderColor: darkMode ? "hsl(217.2 32.6% 17.5%)" : "hsl(220 13% 91%)",
                   boxShadow: "none",
-                  color: "white",
+                  color: darkMode ? "hsl(0 0% 100%)" : "hsl(221 83% 13%)",
                   "& .imglogo": { width: "42px", height: "42px" },
                }}
             >
-               <Toolbar>
+               <Toolbar sx={{ padding: "1rem 1.5rem" }}>
                   <Box sx={{ flexGrow: 1 }}>
                      <Button
                         color="inherit"
-                        href="#"
+                        href="/"
                         target="_blank"
-                        // onClick={() => {
-                        //    toggleDarkMode()
-                        // }}
-                        // title="Toggle Dark Mode"
-                        sx={{ "&:focus": { outline: "none" } }}
+                        onClick={() => {
+                           // ls.dm = !darkMode
+                           // setDarkMode(ls.dm)
+                           // localStorage.setItem(name, JSON.stringify(ls))
+                        }}
+                        title="Toggle Dark Mode"
+                        sx={{
+                           "&:focus": { outline: "none" },
+                           textTransform: "none",
+                           padding: "0.5rem",
+                           minWidth: "auto"
+                        }}
                      >
-                        <img src="/logo.png" className="imglogo"></img>
+                        <img
+                           src="/logo.png"
+                           className="imglogo"
+                           alt="BLT Logo"
+                           style={{
+                              filter: darkMode ? "brightness(0) invert(1)" : "none"
+                           }}
+                        />
                      </Button>
-                     <Link to="/">
+                     <Link to="https://bltcore.com/">
                         <Button
                            color="inherit"
                            className="nav-link"
-                           title="home"
-                           sx={{ color: "white" }}
+                           href="https://chromewebstore.google.com/detail/gridlinks/ofpobifnipafncfehmgeknfkgojkbgke"
+                           target="_new"
+                           sx={{
+                              textTransform: "none",
+                              textShadow: "none",
+                              color: darkMode ? "hsl(0 0% 100%)" : "hsl(221 83% 13%)",
+                              fontWeight: 400,
+                              "&:hover": {
+                                 color: darkMode ? "hsl(24 95% 53%)" : "hsl(24 95% 53%)"
+                              }
+                           }}
                         >
                            {name}
                         </Button>
                      </Link>
-                     <Button
-                        onClick={() => window.open(website, "codemarc")}
-                        target="codemarc"
-                        color="inherit"
-                        className="nav-link"
-                        title={website}
-                        sx={{ textTransform: "none", textShadow: "none" }}
-                     >
-                        by codemarc
-                     </Button>
                   </Box>
-                  <Box sx={{ flexGrow: 7 }}></Box>
-                  <Box sx={{ flexGrow: 1 }}></Box>
+                  <Box sx={{ flexGrow: 7 }} />
+                  <Box sx={{ flexGrow: 1 }} />
                   <Box>
                      <Button
                         color="inherit"
                         href="https://chromewebstore.google.com/detail/gridlinks/ofpobifnipafncfehmgeknfkgojkbgke"
                         target="_new"
-                        sx={{ textTransform: "none", textShadow: "none" }}
+                        sx={{
+                           textTransform: "none",
+                           textShadow: "none",
+                           color: darkMode ? "hsl(0 0% 100%)" : "hsl(221 83% 13%)",
+                           fontWeight: 400,
+                           "&:hover": {
+                              color: darkMode ? "hsl(24 95% 53%)" : "hsl(24 95% 53%)"
+                           }
+                        }}
                      >
                         {versionText}
                      </Button>
